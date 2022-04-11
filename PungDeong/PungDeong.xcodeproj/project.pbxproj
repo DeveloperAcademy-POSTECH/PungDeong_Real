@@ -47,6 +47,10 @@
 		0AE5B57C2804802E00BD062E /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B5782804802E00BD062E /* TestView.swift */; };
 		0AE5B57D2804802E00BD062E /* TestPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B5792804802E00BD062E /* TestPageView.swift */; };
 		0AE5B57E2804802E00BD062E /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B57A2804802E00BD062E /* TestModel.swift */; };
+		0AE5B5812804806300BD062E /* image in Resources */ = {isa = PBXBuildFile; fileRef = 0AE5B5802804806300BD062E /* image */; };
+		0AE5B5852804806D00BD062E /* SwiftUIView-nextbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B5822804806D00BD062E /* SwiftUIView-nextbutton.swift */; };
+		0AE5B5862804806D00BD062E /* SwiftUIView-teststartbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B5832804806D00BD062E /* SwiftUIView-teststartbutton.swift */; };
+		0AE5B5872804806D00BD062E /* SwiftUIView-imagescrollview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B5842804806D00BD062E /* SwiftUIView-imagescrollview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +105,10 @@
 		0AE5B5782804802E00BD062E /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		0AE5B5792804802E00BD062E /* TestPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPageView.swift; sourceTree = "<group>"; };
 		0AE5B57A2804802E00BD062E /* TestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		0AE5B5802804806300BD062E /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; path = image; sourceTree = "<group>"; };
+		0AE5B5822804806D00BD062E /* SwiftUIView-nextbutton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftUIView-nextbutton.swift"; sourceTree = "<group>"; };
+		0AE5B5832804806D00BD062E /* SwiftUIView-teststartbutton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftUIView-teststartbutton.swift"; sourceTree = "<group>"; };
+		0AE5B5842804806D00BD062E /* SwiftUIView-imagescrollview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftUIView-imagescrollview.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +171,7 @@
 		0AE5B4EC280475B800BD062E /* PungDeong */ = {
 			isa = PBXGroup;
 			children = (
+				0AE5B57F2804805100BD062E /* TestDescription */,
 				0AE5B5762804802100BD062E /* Test */,
 				0AE5B56528047FB800BD062E /* Home */,
 				0AE5B56028047F4100BD062E /* Firebase */,
@@ -249,6 +258,17 @@
 				0AE5B5782804802E00BD062E /* TestView.swift */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		0AE5B57F2804805100BD062E /* TestDescription */ = {
+			isa = PBXGroup;
+			children = (
+				0AE5B5842804806D00BD062E /* SwiftUIView-imagescrollview.swift */,
+				0AE5B5822804806D00BD062E /* SwiftUIView-nextbutton.swift */,
+				0AE5B5832804806D00BD062E /* SwiftUIView-teststartbutton.swift */,
+				0AE5B5802804806300BD062E /* image */,
+			);
+			path = TestDescription;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,6 +396,7 @@
 				0AE5B55528047F0B00BD062E /* Font in Resources */,
 				0AE5B4F5280475B900BD062E /* Preview Assets.xcassets in Resources */,
 				0AE5B4F2280475B900BD062E /* Assets.xcassets in Resources */,
+				0AE5B5812804806300BD062E /* image in Resources */,
 				0AE5B56728047FEC00BD062E /* Images in Resources */,
 				0AE5B51C280477E700BD062E /* GoogleService-Info.plist in Resources */,
 			);
@@ -418,10 +439,13 @@
 				0AE5B56328047F5000BD062E /* UserInfo.swift in Sources */,
 				0AE5B55F28047F1900BD062E /* AppleLogIn.swift in Sources */,
 				0AE5B57B2804802E00BD062E /* TestSet.swift in Sources */,
+				0AE5B5872804806D00BD062E /* SwiftUIView-imagescrollview.swift in Sources */,
 				0AE5B4EE280475B800BD062E /* PungDeongApp.swift in Sources */,
 				0AE5B57028047FF600BD062E /* ToolbarImage.swift in Sources */,
+				0AE5B5852804806D00BD062E /* SwiftUIView-nextbutton.swift in Sources */,
 				0AE5B55B28047F1900BD062E /* GoogleUserAuthModel.swift in Sources */,
 				0AE5B57528047FF600BD062E /* HeaderView.swift in Sources */,
+				0AE5B5862804806D00BD062E /* SwiftUIView-teststartbutton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
