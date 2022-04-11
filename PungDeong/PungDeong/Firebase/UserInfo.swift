@@ -9,12 +9,12 @@ import SwiftUI
 
 class UserInfo: ObservableObject {
     @Published var email : String?
-    @Published var test : Test?
+    @Published var test : Test1?
     @Published var content1 : Content1?
     @Published var content2 : Content2?
 }
 
-struct Test: Codable {
+struct Test1: Codable {
     //var complete: Bool
     var selects: [Int]
     var type: Int

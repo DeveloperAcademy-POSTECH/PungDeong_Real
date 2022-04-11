@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ScrollView: View {
+struct ScrollView2: View {
     var body: some View {
         ScrollView {
             Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
@@ -17,6 +17,6 @@ struct ScrollView: View {
 
 struct ScrollView_Previews: PreviewProvider {
     static var previews: some View {
-        ScrollView()
+        ScrollView2()
     }
 }

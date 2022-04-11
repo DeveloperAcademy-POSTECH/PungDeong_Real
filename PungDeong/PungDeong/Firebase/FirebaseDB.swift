@@ -20,11 +20,11 @@ class FirebaseDB {
         userInfo.content2 = fetchContent2(email: email)
     }
     
-    func fetchTest(email: String) -> Test? {
-        var returnData: Test? = nil
-        let docRef = db.collection("Test").document(email.description)
+    func fetchTest(email: String) -> Test1? {
+        var returnData: Test1? = nil
+        let docRef = db.collection("Test1").document(email.description)
 
-        docRef.getDocument(as: Test.self) { result in
+        docRef.getDocument(as: Test1.self) { result in
             switch result {
             case .success(let test):
                 returnData = test
@@ -82,9 +82,9 @@ class FirebaseDB {
         }
     }
     
-    func addTest(email: String, test: Test) {
+    func addTest(email: String, test: Test1) {
         do {
-            try db.collection("Test").document(email.description).setData(from: test)
+            try db.collection("Test1").document(email.description).setData(from: test)
         } catch let error {
             print("Error writing: \(error)")
         }
