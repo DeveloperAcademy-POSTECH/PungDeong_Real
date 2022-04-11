@@ -14,6 +14,8 @@
 		0AE5B4FF280475B900BD062E /* PungDeongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B4FE280475B900BD062E /* PungDeongTests.swift */; };
 		0AE5B509280475BA00BD062E /* PungDeongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B508280475BA00BD062E /* PungDeongUITests.swift */; };
 		0AE5B50B280475BA00BD062E /* PungDeongUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B50A280475BA00BD062E /* PungDeongUITestsLaunchTests.swift */; };
+		0AE5B5192804767200BD062E /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 0AE5B5182804767200BD062E /* GoogleSignIn */; };
+		0AE5B51C280477E700BD062E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AE5B51B280477E700BD062E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 		0AE5B504280475BA00BD062E /* PungDeongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PungDeongUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE5B508280475BA00BD062E /* PungDeongUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PungDeongUITests.swift; sourceTree = "<group>"; };
 		0AE5B50A280475BA00BD062E /* PungDeongUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PungDeongUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0AE5B51B280477E700BD062E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AE5B5192804767200BD062E /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +78,7 @@
 		0AE5B4E1280475B800BD062E = {
 			isa = PBXGroup;
 			children = (
+				0AE5B51B280477E700BD062E /* GoogleService-Info.plist */,
 				0AE5B4EC280475B800BD062E /* PungDeong */,
 				0AE5B4FD280475B900BD062E /* PungDeongTests */,
 				0AE5B507280475BA00BD062E /* PungDeongUITests */,
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = PungDeong;
+			packageProductDependencies = (
+				0AE5B5182804767200BD062E /* GoogleSignIn */,
+			);
 			productName = PungDeong;
 			productReference = 0AE5B4EA280475B800BD062E /* PungDeong.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 0AE5B4E1280475B800BD062E;
+			packageReferences = (
+				0AE5B5172804767200BD062E /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = 0AE5B4EB280475B800BD062E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +244,7 @@
 			files = (
 				0AE5B4F5280475B900BD062E /* Preview Assets.xcassets in Resources */,
 				0AE5B4F2280475B900BD062E /* Assets.xcassets in Resources */,
+				0AE5B51C280477E700BD062E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +589,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0AE5B5172804767200BD062E /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0AE5B5182804767200BD062E /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0AE5B5172804767200BD062E /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0AE5B4E2280475B800BD062E /* Project object */;
 }
