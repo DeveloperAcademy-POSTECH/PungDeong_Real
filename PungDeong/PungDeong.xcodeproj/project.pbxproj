@@ -35,6 +35,14 @@
 		0AE5B55F28047F1900BD062E /* AppleLogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B55A28047F1900BD062E /* AppleLogIn.swift */; };
 		0AE5B56328047F5000BD062E /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B56128047F5000BD062E /* UserInfo.swift */; };
 		0AE5B56428047F5000BD062E /* FirebaseDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B56228047F5000BD062E /* FirebaseDB.swift */; };
+		0AE5B56728047FEC00BD062E /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 0AE5B56628047FEC00BD062E /* Images */; };
+		0AE5B56F28047FF600BD062E /* cardview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B56828047FF600BD062E /* cardview.swift */; };
+		0AE5B57028047FF600BD062E /* ToolbarImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B56928047FF600BD062E /* ToolbarImage.swift */; };
+		0AE5B57128047FF600BD062E /* scrollview_sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B56A28047FF600BD062E /* scrollview_sample.swift */; };
+		0AE5B57228047FF600BD062E /* Home-main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B56B28047FF600BD062E /* Home-main.swift */; };
+		0AE5B57328047FF600BD062E /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B56C28047FF600BD062E /* ScrollView.swift */; };
+		0AE5B57428047FF600BD062E /* newscreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B56D28047FF600BD062E /* newscreen.swift */; };
+		0AE5B57528047FF600BD062E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B56E28047FF600BD062E /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +85,14 @@
 		0AE5B55A28047F1900BD062E /* AppleLogIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleLogIn.swift; sourceTree = "<group>"; };
 		0AE5B56128047F5000BD062E /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		0AE5B56228047F5000BD062E /* FirebaseDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseDB.swift; sourceTree = "<group>"; };
+		0AE5B56628047FEC00BD062E /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		0AE5B56828047FF600BD062E /* cardview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cardview.swift; sourceTree = "<group>"; };
+		0AE5B56928047FF600BD062E /* ToolbarImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolbarImage.swift; sourceTree = "<group>"; };
+		0AE5B56A28047FF600BD062E /* scrollview_sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = scrollview_sample.swift; sourceTree = "<group>"; };
+		0AE5B56B28047FF600BD062E /* Home-main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Home-main.swift"; sourceTree = "<group>"; };
+		0AE5B56C28047FF600BD062E /* ScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
+		0AE5B56D28047FF600BD062E /* newscreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newscreen.swift; sourceTree = "<group>"; };
+		0AE5B56E28047FF600BD062E /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +155,7 @@
 		0AE5B4EC280475B800BD062E /* PungDeong */ = {
 			isa = PBXGroup;
 			children = (
+				0AE5B56528047FB800BD062E /* Home */,
 				0AE5B56028047F4100BD062E /* Firebase */,
 				0AE5B55128047EE300BD062E /* LogIn */,
 				0AE5B53328047C5000BD062E /* PungDeong.entitlements */,
@@ -197,6 +214,21 @@
 				0AE5B56128047F5000BD062E /* UserInfo.swift */,
 			);
 			path = Firebase;
+			sourceTree = "<group>";
+		};
+		0AE5B56528047FB800BD062E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0AE5B56828047FF600BD062E /* cardview.swift */,
+				0AE5B56E28047FF600BD062E /* HeaderView.swift */,
+				0AE5B56B28047FF600BD062E /* Home-main.swift */,
+				0AE5B56D28047FF600BD062E /* newscreen.swift */,
+				0AE5B56A28047FF600BD062E /* scrollview_sample.swift */,
+				0AE5B56C28047FF600BD062E /* ScrollView.swift */,
+				0AE5B56928047FF600BD062E /* ToolbarImage.swift */,
+				0AE5B56628047FEC00BD062E /* Images */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +356,7 @@
 				0AE5B55528047F0B00BD062E /* Font in Resources */,
 				0AE5B4F5280475B900BD062E /* Preview Assets.xcassets in Resources */,
 				0AE5B4F2280475B900BD062E /* Assets.xcassets in Resources */,
+				0AE5B56728047FEC00BD062E /* Images in Resources */,
 				0AE5B51C280477E700BD062E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,15 +382,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AE5B57428047FF600BD062E /* newscreen.swift in Sources */,
 				0AE5B55D28047F1900BD062E /* LogInView.swift in Sources */,
+				0AE5B57328047FF600BD062E /* ScrollView.swift in Sources */,
+				0AE5B57128047FF600BD062E /* scrollview_sample.swift in Sources */,
+				0AE5B57228047FF600BD062E /* Home-main.swift in Sources */,
 				0AE5B4F0280475B800BD062E /* ContentView.swift in Sources */,
+				0AE5B56F28047FF600BD062E /* cardview.swift in Sources */,
 				0AE5B55E28047F1900BD062E /* GoogleLogIn.swift in Sources */,
 				0AE5B56428047F5000BD062E /* FirebaseDB.swift in Sources */,
 				0AE5B55C28047F1900BD062E /* AppSymbol.swift in Sources */,
 				0AE5B56328047F5000BD062E /* UserInfo.swift in Sources */,
 				0AE5B55F28047F1900BD062E /* AppleLogIn.swift in Sources */,
 				0AE5B4EE280475B800BD062E /* PungDeongApp.swift in Sources */,
+				0AE5B57028047FF600BD062E /* ToolbarImage.swift in Sources */,
 				0AE5B55B28047F1900BD062E /* GoogleUserAuthModel.swift in Sources */,
+				0AE5B57528047FF600BD062E /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
