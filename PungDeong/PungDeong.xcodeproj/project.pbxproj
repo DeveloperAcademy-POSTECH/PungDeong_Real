@@ -51,6 +51,12 @@
 		0AE5B5852804806D00BD062E /* SwiftUIView-nextbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B5822804806D00BD062E /* SwiftUIView-nextbutton.swift */; };
 		0AE5B5862804806D00BD062E /* SwiftUIView-teststartbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B5832804806D00BD062E /* SwiftUIView-teststartbutton.swift */; };
 		0AE5B5872804806D00BD062E /* SwiftUIView-imagescrollview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B5842804806D00BD062E /* SwiftUIView-imagescrollview.swift */; };
+		0AE5B58A280482DE00BD062E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B589280482DE00BD062E /* ProfileView.swift */; };
+		0AE5B590280482EA00BD062E /* sample.imageset in Resources */ = {isa = PBXBuildFile; fileRef = 0AE5B58B280482E900BD062E /* sample.imageset */; };
+		0AE5B591280482EA00BD062E /* VeryLightBlue.colorset in Resources */ = {isa = PBXBuildFile; fileRef = 0AE5B58C280482E900BD062E /* VeryLightBlue.colorset */; };
+		0AE5B592280482EA00BD062E /* LightBlue.colorset in Resources */ = {isa = PBXBuildFile; fileRef = 0AE5B58D280482E900BD062E /* LightBlue.colorset */; };
+		0AE5B593280482EA00BD062E /* CustomGray.colorset in Resources */ = {isa = PBXBuildFile; fileRef = 0AE5B58E280482E900BD062E /* CustomGray.colorset */; };
+		0AE5B594280482EA00BD062E /* CustomBlue.colorset in Resources */ = {isa = PBXBuildFile; fileRef = 0AE5B58F280482EA00BD062E /* CustomBlue.colorset */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +115,12 @@
 		0AE5B5822804806D00BD062E /* SwiftUIView-nextbutton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftUIView-nextbutton.swift"; sourceTree = "<group>"; };
 		0AE5B5832804806D00BD062E /* SwiftUIView-teststartbutton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftUIView-teststartbutton.swift"; sourceTree = "<group>"; };
 		0AE5B5842804806D00BD062E /* SwiftUIView-imagescrollview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftUIView-imagescrollview.swift"; sourceTree = "<group>"; };
+		0AE5B589280482DE00BD062E /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		0AE5B58B280482E900BD062E /* sample.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sample.imageset; sourceTree = "<group>"; };
+		0AE5B58C280482E900BD062E /* VeryLightBlue.colorset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = VeryLightBlue.colorset; sourceTree = "<group>"; };
+		0AE5B58D280482E900BD062E /* LightBlue.colorset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LightBlue.colorset; sourceTree = "<group>"; };
+		0AE5B58E280482E900BD062E /* CustomGray.colorset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CustomGray.colorset; sourceTree = "<group>"; };
+		0AE5B58F280482EA00BD062E /* CustomBlue.colorset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CustomBlue.colorset; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +183,7 @@
 		0AE5B4EC280475B800BD062E /* PungDeong */ = {
 			isa = PBXGroup;
 			children = (
+				0AE5B588280482CA00BD062E /* Settings */,
 				0AE5B57F2804805100BD062E /* TestDescription */,
 				0AE5B5762804802100BD062E /* Test */,
 				0AE5B56528047FB800BD062E /* Home */,
@@ -269,6 +282,19 @@
 				0AE5B5802804806300BD062E /* image */,
 			);
 			path = TestDescription;
+			sourceTree = "<group>";
+		};
+		0AE5B588280482CA00BD062E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0AE5B58F280482EA00BD062E /* CustomBlue.colorset */,
+				0AE5B58E280482E900BD062E /* CustomGray.colorset */,
+				0AE5B58D280482E900BD062E /* LightBlue.colorset */,
+				0AE5B58B280482E900BD062E /* sample.imageset */,
+				0AE5B58C280482E900BD062E /* VeryLightBlue.colorset */,
+				0AE5B589280482DE00BD062E /* ProfileView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,8 +423,13 @@
 				0AE5B4F5280475B900BD062E /* Preview Assets.xcassets in Resources */,
 				0AE5B4F2280475B900BD062E /* Assets.xcassets in Resources */,
 				0AE5B5812804806300BD062E /* image in Resources */,
+				0AE5B591280482EA00BD062E /* VeryLightBlue.colorset in Resources */,
 				0AE5B56728047FEC00BD062E /* Images in Resources */,
+				0AE5B592280482EA00BD062E /* LightBlue.colorset in Resources */,
+				0AE5B590280482EA00BD062E /* sample.imageset in Resources */,
+				0AE5B593280482EA00BD062E /* CustomGray.colorset in Resources */,
 				0AE5B51C280477E700BD062E /* GoogleService-Info.plist in Resources */,
+				0AE5B594280482EA00BD062E /* CustomBlue.colorset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +470,7 @@
 				0AE5B56328047F5000BD062E /* UserInfo.swift in Sources */,
 				0AE5B55F28047F1900BD062E /* AppleLogIn.swift in Sources */,
 				0AE5B57B2804802E00BD062E /* TestSet.swift in Sources */,
+				0AE5B58A280482DE00BD062E /* ProfileView.swift in Sources */,
 				0AE5B5872804806D00BD062E /* SwiftUIView-imagescrollview.swift in Sources */,
 				0AE5B4EE280475B800BD062E /* PungDeongApp.swift in Sources */,
 				0AE5B57028047FF600BD062E /* ToolbarImage.swift in Sources */,
