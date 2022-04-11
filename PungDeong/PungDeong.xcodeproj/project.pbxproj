@@ -43,6 +43,10 @@
 		0AE5B57328047FF600BD062E /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B56C28047FF600BD062E /* ScrollView.swift */; };
 		0AE5B57428047FF600BD062E /* newscreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B56D28047FF600BD062E /* newscreen.swift */; };
 		0AE5B57528047FF600BD062E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B56E28047FF600BD062E /* HeaderView.swift */; };
+		0AE5B57B2804802E00BD062E /* TestSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B5772804802E00BD062E /* TestSet.swift */; };
+		0AE5B57C2804802E00BD062E /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B5782804802E00BD062E /* TestView.swift */; };
+		0AE5B57D2804802E00BD062E /* TestPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B5792804802E00BD062E /* TestPageView.swift */; };
+		0AE5B57E2804802E00BD062E /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B57A2804802E00BD062E /* TestModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +97,10 @@
 		0AE5B56C28047FF600BD062E /* ScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		0AE5B56D28047FF600BD062E /* newscreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newscreen.swift; sourceTree = "<group>"; };
 		0AE5B56E28047FF600BD062E /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		0AE5B5772804802E00BD062E /* TestSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSet.swift; sourceTree = "<group>"; };
+		0AE5B5782804802E00BD062E /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		0AE5B5792804802E00BD062E /* TestPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPageView.swift; sourceTree = "<group>"; };
+		0AE5B57A2804802E00BD062E /* TestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +163,7 @@
 		0AE5B4EC280475B800BD062E /* PungDeong */ = {
 			isa = PBXGroup;
 			children = (
+				0AE5B5762804802100BD062E /* Test */,
 				0AE5B56528047FB800BD062E /* Home */,
 				0AE5B56028047F4100BD062E /* Firebase */,
 				0AE5B55128047EE300BD062E /* LogIn */,
@@ -229,6 +238,17 @@
 				0AE5B56628047FEC00BD062E /* Images */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		0AE5B5762804802100BD062E /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				0AE5B57A2804802E00BD062E /* TestModel.swift */,
+				0AE5B5792804802E00BD062E /* TestPageView.swift */,
+				0AE5B5772804802E00BD062E /* TestSet.swift */,
+				0AE5B5782804802E00BD062E /* TestView.swift */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,13 +407,17 @@
 				0AE5B57328047FF600BD062E /* ScrollView.swift in Sources */,
 				0AE5B57128047FF600BD062E /* scrollview_sample.swift in Sources */,
 				0AE5B57228047FF600BD062E /* Home-main.swift in Sources */,
+				0AE5B57D2804802E00BD062E /* TestPageView.swift in Sources */,
 				0AE5B4F0280475B800BD062E /* ContentView.swift in Sources */,
+				0AE5B57E2804802E00BD062E /* TestModel.swift in Sources */,
+				0AE5B57C2804802E00BD062E /* TestView.swift in Sources */,
 				0AE5B56F28047FF600BD062E /* cardview.swift in Sources */,
 				0AE5B55E28047F1900BD062E /* GoogleLogIn.swift in Sources */,
 				0AE5B56428047F5000BD062E /* FirebaseDB.swift in Sources */,
 				0AE5B55C28047F1900BD062E /* AppSymbol.swift in Sources */,
 				0AE5B56328047F5000BD062E /* UserInfo.swift in Sources */,
 				0AE5B55F28047F1900BD062E /* AppleLogIn.swift in Sources */,
+				0AE5B57B2804802E00BD062E /* TestSet.swift in Sources */,
 				0AE5B4EE280475B800BD062E /* PungDeongApp.swift in Sources */,
 				0AE5B57028047FF600BD062E /* ToolbarImage.swift in Sources */,
 				0AE5B55B28047F1900BD062E /* GoogleUserAuthModel.swift in Sources */,
