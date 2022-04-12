@@ -67,6 +67,7 @@ extension SignInWithAppleDelegate: ASAuthorizationControllerDelegate {
                         print("email 없음")
                         return
                     }
+                    FirebaseDB().addEmail(email: email)
                     signInSucceeded(email)
                 } else {
                     print("222222 ================== 로그인 했었음")
@@ -75,6 +76,7 @@ extension SignInWithAppleDelegate: ASAuthorizationControllerDelegate {
                         print("email 없음")
                         return
                     }
+                    FirebaseDB().addEmail(email: email)
                     signInSucceeded(email)
                 }
             
