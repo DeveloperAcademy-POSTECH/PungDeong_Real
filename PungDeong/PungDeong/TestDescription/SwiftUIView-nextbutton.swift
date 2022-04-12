@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct StackView: View {
+    
+    @Binding var rootIsActive: Bool
+    
     var body: some View {
-        NavigationView {
+    
             VStack {
                 HStack {
                     Text("환영해요!")
@@ -31,17 +34,16 @@ struct StackView: View {
                         
                 
                 NavigationLink {
-                    TestDescriptionContent()
+                    
+                    TestView(rootIsActive: $rootIsActive)
+                     
+                
                 } label: {
                     EditButtonView(text: "지금 시작하기")
                 }
-               
 
-                
-            
-            
             }
-        }
+        
     }
 }
 
@@ -78,6 +80,6 @@ struct EditButtonView: View {
 
 struct StackView_Previews: PreviewProvider {
     static var previews: some View {
-        StackView()
+        StackView(rootIsActive: .constant(true))
     }
 }

@@ -15,7 +15,9 @@ struct TestResultView: View {
     
     var viewModel =  TestResultViewModel()
     
-    @State var type: Int = 0
+    @EnvironmentObject var userInfo: UserInfo
+    
+    @State var type: Int = 1
     @Binding var shouldPopToRootView : Bool
     
 

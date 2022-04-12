@@ -31,7 +31,11 @@ struct Home_main: View {
                     
                     
                     NavigationLink(
-                        destination: TestView(rootIsActive: self.$isActive).navigationBarHidden(true),
+                        destination:
+                            
+                            TestDescriptionContent(rootIsActive: $isActive)
+                            .navigationBarHidden(true)
+                            ,
                             isActive: self.$isActive
                         ) {
                             RetestButton()

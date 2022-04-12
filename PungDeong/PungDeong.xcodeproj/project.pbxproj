@@ -280,7 +280,6 @@
 				0AE5B4EF280475B800BD062E /* ContentView.swift */,
 				0AE5B4F1280475B900BD062E /* Assets.xcassets */,
 				0AE5B4F3280475B900BD062E /* Preview Content */,
-				C0EE3BEE280548F80077F6B4 /* TestResultModel.swift */,
 			);
 			path = PungDeong;
 			sourceTree = "<group>";
@@ -386,10 +385,11 @@
 			isa = PBXGroup;
 			children = (
 				C0EE3BBF28051CD50077F6B4 /* View.swift */,
-				C0EE3BC028051CD50077F6B4 /* TestResultView.swift */,
-				C0EE3BC128051CD50077F6B4 /* ResultBarView.swift */,
+				C0EE3BEE280548F80077F6B4 /* TestResultModel.swift */,
 				C0EE3BC228051CD50077F6B4 /* TestResultViewModel.swift */,
+				C0EE3BC028051CD50077F6B4 /* TestResultView.swift */,
 				C0EE3BC328051CD50077F6B4 /* ResultTopView.swift */,
+				C0EE3BC128051CD50077F6B4 /* ResultBarView.swift */,
 				C0EE3BC428051CD50077F6B4 /* FloatingMenuView.swift */,
 			);
 			path = TestResult;

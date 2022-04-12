@@ -12,6 +12,8 @@ class UserInfo: ObservableObject {
     @Published var test : Test1?
     @Published var content1 : Content1?
     @Published var content2 : Content2?
+    
+    
 }
 
 struct Test1: Codable {

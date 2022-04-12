@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct ResultTopView: View {
+    
+    
+    
+    
+    
     var body: some View {
     
         GeometryReader { geometry in

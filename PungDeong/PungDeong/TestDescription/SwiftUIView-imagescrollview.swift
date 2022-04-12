@@ -10,6 +10,11 @@ import SwiftUITrackableScrollView
 
 struct TestDescriptionContent: View {
     
+    //Pop to root View 를 위한 navigation View is Active
+    @Binding var rootIsActive : Bool
+    
+    @State var isFinished: Bool = false
+    
     @State private var scrollViewContentOffset = CGFloat(0)
     
     let images:[Image] = [Image("1"), Image("2"), Image("3"), Image("4"), Image("5"), Image("6"), Image("7"), Image("8"), Image("9"), Image("10"), Image("11"), Image("12")]
@@ -68,6 +73,9 @@ struct TestDescriptionContent: View {
                     
                     Button {
                         // 실행될 코드
+                        self.isFinished = true
+                        
+                        
                     } label: {
                         EditButtonView(text: "테스트 시작하기")
                             
@@ -79,6 +87,14 @@ struct TestDescriptionContent: View {
                 
             }
         }
+        .background(
+            NavigationLink(isActive: $isFinished, destination: {
+                TestView(rootIsActive: $rootIsActive)
+                    .navigationBarHidden(true)
+            }, label: {
+                EmptyView()
+            })
+        )
     }
 }
             
@@ -86,6 +102,6 @@ struct TestDescriptionContent: View {
 
 struct TestDescriptionContent_Previews: PreviewProvider {
     static var previews: some View {
-        TestDescriptionContent()
+        TestDescriptionContent(rootIsActive: .constant(true))
     }
 }

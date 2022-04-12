@@ -77,7 +77,7 @@ struct TestPageView: View {
                     typeResult = index
                 }
             }
-            
+            userInfo.test = Test1(selects: testResult, type: typeResult)
             FirebaseDB().addTest(email: userInfo.email ?? "", test: Test1(selects: testResult, type: typeResult))
             
             self.isFinished.toggle()
