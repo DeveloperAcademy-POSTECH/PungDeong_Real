@@ -59,7 +59,6 @@
 		0AE5B5852804806D00BD062E /* SwiftUIView-nextbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B5822804806D00BD062E /* SwiftUIView-nextbutton.swift */; };
 		0AE5B5862804806D00BD062E /* SwiftUIView-teststartbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B5832804806D00BD062E /* SwiftUIView-teststartbutton.swift */; };
 		0AE5B5872804806D00BD062E /* SwiftUIView-imagescrollview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B5842804806D00BD062E /* SwiftUIView-imagescrollview.swift */; };
-		0AE5B58A280482DE00BD062E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B589280482DE00BD062E /* ProfileView.swift */; };
 		0AE5B590280482EA00BD062E /* sample.imageset in Resources */ = {isa = PBXBuildFile; fileRef = 0AE5B58B280482E900BD062E /* sample.imageset */; };
 		0AE5B591280482EA00BD062E /* VeryLightBlue.colorset in Resources */ = {isa = PBXBuildFile; fileRef = 0AE5B58C280482E900BD062E /* VeryLightBlue.colorset */; };
 		0AE5B592280482EA00BD062E /* LightBlue.colorset in Resources */ = {isa = PBXBuildFile; fileRef = 0AE5B58D280482E900BD062E /* LightBlue.colorset */; };
@@ -88,6 +87,7 @@
 		C0EE3BF8280564050077F6B4 /* character_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C0EE3BF3280564050077F6B4 /* character_4.png */; };
 		C0EE3BF9280564050077F6B4 /* character_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C0EE3BF4280564050077F6B4 /* character_3.png */; };
 		C0EE3BFA280564050077F6B4 /* character_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C0EE3BF5280564050077F6B4 /* character_2.png */; };
+		C0EE3BFC280569F20077F6B4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EE3BFB280569F20077F6B4 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,7 +153,6 @@
 		0AE5B5822804806D00BD062E /* SwiftUIView-nextbutton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftUIView-nextbutton.swift"; sourceTree = "<group>"; };
 		0AE5B5832804806D00BD062E /* SwiftUIView-teststartbutton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftUIView-teststartbutton.swift"; sourceTree = "<group>"; };
 		0AE5B5842804806D00BD062E /* SwiftUIView-imagescrollview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftUIView-imagescrollview.swift"; sourceTree = "<group>"; };
-		0AE5B589280482DE00BD062E /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		0AE5B58B280482E900BD062E /* sample.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sample.imageset; sourceTree = "<group>"; };
 		0AE5B58C280482E900BD062E /* VeryLightBlue.colorset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = VeryLightBlue.colorset; sourceTree = "<group>"; };
 		0AE5B58D280482E900BD062E /* LightBlue.colorset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LightBlue.colorset; sourceTree = "<group>"; };
@@ -179,6 +178,7 @@
 		C0EE3BF3280564050077F6B4 /* character_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character_4.png; sourceTree = "<group>"; };
 		C0EE3BF4280564050077F6B4 /* character_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character_3.png; sourceTree = "<group>"; };
 		C0EE3BF5280564050077F6B4 /* character_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character_2.png; sourceTree = "<group>"; };
+		C0EE3BFB280569F20077F6B4 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				0AE5B588280482CA00BD062E /* Settings */,
+				C0EE3BFB280569F20077F6B4 /* ProfileView.swift */,
 				0AE5B57F2804805100BD062E /* TestDescription */,
 				0AE5B5762804802100BD062E /* Test */,
 				0AE5B56528047FB800BD062E /* Home */,
@@ -386,7 +387,6 @@
 				0AE5B58D280482E900BD062E /* LightBlue.colorset */,
 				0AE5B58B280482E900BD062E /* sample.imageset */,
 				0AE5B58C280482E900BD062E /* VeryLightBlue.colorset */,
-				0AE5B589280482DE00BD062E /* ProfileView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -616,12 +616,12 @@
 				0AE5B56428047F5000BD062E /* FirebaseDB.swift in Sources */,
 				0AE5B55C28047F1900BD062E /* AppSymbol.swift in Sources */,
 				0AE5B56328047F5000BD062E /* UserInfo.swift in Sources */,
+				C0EE3BFC280569F20077F6B4 /* ProfileView.swift in Sources */,
 				0AE5B55F28047F1900BD062E /* AppleLogIn.swift in Sources */,
 				C0EE3BE9280543F40077F6B4 /* TestPageView.swift in Sources */,
 				0AE5B57B2804802E00BD062E /* TestSet.swift in Sources */,
 				C0EE3BDF2805267D0077F6B4 /* ToolbarImage.swift in Sources */,
 				C0EE3BEF280548F80077F6B4 /* TestResultModel.swift in Sources */,
-				0AE5B58A280482DE00BD062E /* ProfileView.swift in Sources */,
 				C0EE3BDE2805267D0077F6B4 /* Home-main.swift in Sources */,
 				0AE5B5872804806D00BD062E /* SwiftUIView-imagescrollview.swift in Sources */,
 				C0EE3BC828051CD50077F6B4 /* TestResultViewModel.swift in Sources */,

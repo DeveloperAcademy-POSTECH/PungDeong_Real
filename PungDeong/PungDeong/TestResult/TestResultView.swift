@@ -59,7 +59,7 @@ struct TestResultView: View {
                                 .offset(x: -geometry.size.width / 10)
                             
                             HStack {
-                                Text("#교수님사랑 #예비대학원생")
+                                Text("#\(data.hastag[0]) #\(data.hastag[1])")
                                     .fontWeight(.bold)
                                     .padding(.leading, 25)
                             
@@ -69,7 +69,7 @@ struct TestResultView: View {
                             
                             
                             Text(viewModel.resultType(userInfo.test?.type ?? 0).description)
-                                .lineLimit(5)
+                                .lineLimit(6)
                                 .multilineTextAlignment(.leading)
                                 .fixedSize(horizontal: false, vertical: true)
                                 .font(.body)
