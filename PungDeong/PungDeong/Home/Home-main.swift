@@ -14,6 +14,7 @@ struct Home_main: View {
     @State var isActive: Bool = false
     
     
+    
     var body: some View {
         GeometryReader { geometry in
             NavigationView {
