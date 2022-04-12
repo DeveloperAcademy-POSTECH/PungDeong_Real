@@ -51,6 +51,9 @@ struct Home_main: View {
                     .frame(width: 45, alignment: .topLeading))
             }
         }
+        .onAppear {
+            
+        }
     }
 }
 

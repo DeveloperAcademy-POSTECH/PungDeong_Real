@@ -21,11 +21,11 @@ struct PungDeongApp: App {
     
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-//                .environmentObject(googleUserAuth)
-//                .environmentObject(userInfo)
+
             
             Home_main()
+                .environmentObject(googleUserAuth)
+                .environmentObject(userInfo)
         }
     }
 }

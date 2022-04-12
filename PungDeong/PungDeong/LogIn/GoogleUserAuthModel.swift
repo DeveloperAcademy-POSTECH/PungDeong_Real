@@ -50,12 +50,13 @@ class GoogleUserAuthModel: ObservableObject {
             callback: { user, error in
                 if let error = error {
                     self.errorMessage = "error: \(error.localizedDescription)"
+                return
                 }
                 self.checkStatus()
+                FirebaseDB().addEmail(email: self.email)
+                completion(self.email)
             }
         )
-        FirebaseDB().addEmail(email: email)
-        completion(email)
     }
     
     func signOut(){
