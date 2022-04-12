@@ -12,6 +12,11 @@ import SwiftUI
 struct TestPageView: View {
     
     
+    //Pop to root View 를 위한 navigation View is Active
+    @Binding var rootIsActive: Bool
+
+    
+    
     //MARK: - Propeties
     
     let test: Test
@@ -20,10 +25,9 @@ struct TestPageView: View {
     
     @State var isFinished: Bool = false
     
-    init(test: Test) {
-        self.test = test
-        self.currentItem = test.pages[0]
-    }
+    //binding 수정 요망
+
+
     
     let screenWidth = UIScreen.main.bounds.width
     let screenHeight = UIScreen.main.bounds.height
@@ -69,7 +73,12 @@ struct TestPageView: View {
     var body: some View {
         ZStack {
             // Background Color
-            Color("background").ignoresSafeArea()
+            Image("background")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                
+                
+                .ignoresSafeArea()
             
             VStack {
                 
@@ -155,7 +164,7 @@ struct TestPageView: View {
         }
         .background(
             NavigationLink(isActive: $isFinished, destination: {
-                TestResultView()
+                TestResultView(shouldPopToRootView: $rootIsActive)
                     .navigationBarHidden(true)
             }, label: {
                 EmptyView()
@@ -230,6 +239,6 @@ struct PageIndexButtonView: View {
 
 struct TestPageView_Previews: PreviewProvider {
     static var previews: some View {
-        TestPageView(test: test)
+        TestPageView(rootIsActive: .constant(true), test: test, currentItem: test.pages[0])
     }
 }

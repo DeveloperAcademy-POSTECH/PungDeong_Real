@@ -9,6 +9,11 @@ import SwiftUI
 
 
 struct Home_main: View {
+    
+    //Pop to root View 를 위한 navigation View is Active
+    @State var isActive: Bool = false
+    
+    
     var body: some View {
         GeometryReader { geometry in
             NavigationView {
@@ -23,16 +28,18 @@ struct Home_main: View {
                     HeaderView()
                     
                     
-                    
-                    
                     NavigationLink(
-                        destination: {
-                            TestView()
-                                .navigationBarHidden(true)
-                        },
-                        label: {
+                        destination: TestView(rootIsActive: self.$isActive).navigationBarHidden(true),
+                            isActive: self.$isActive
+                        ) {
                             RetestButton()
-                        })
+                        }
+                        .isDetailLink(false)
+                        .navigationBarTitle("Root")
+                    
+                    
+                    
+                  
                     
                     Spacer()
                     
@@ -40,7 +47,7 @@ struct Home_main: View {
                 .padding()
                 .toolbar {
                     NavigationLink(
-                        destination: Text("Profile"),
+                        destination: ProfileView(),
                         label: {
                             ToolbarImage()
                         })

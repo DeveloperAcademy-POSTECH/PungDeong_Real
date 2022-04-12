@@ -13,9 +13,10 @@ import UIKit
 
 struct TestResultView: View {
     
-    private var viewModel =  TestResultViewModel()
+    var viewModel =  TestResultViewModel()
     
-    @State private var type: Int = 0
+    @State var type: Int = 0
+    @Binding var shouldPopToRootView : Bool
     
 
     
@@ -73,7 +74,7 @@ struct TestResultView: View {
                             print("DEBUG: Button has tapped")
                             
                             // 메인화면 이동 메서드 호출
-                            
+                            self.shouldPopToRootView = false
                             
                             
                         } label: {
@@ -173,6 +174,8 @@ struct ResultProgressStyle: ProgressViewStyle {
 
 struct TestResultView_Previews: PreviewProvider {
     static var previews: some View {
-        TestResultView()
+
+         TestResultView(shouldPopToRootView: .constant(true))
+
     }
 }

@@ -81,6 +81,7 @@
 		C0EE3BDE2805267D0077F6B4 /* Home-main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EE3BD82805267D0077F6B4 /* Home-main.swift */; };
 		C0EE3BDF2805267D0077F6B4 /* ToolbarImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EE3BD92805267D0077F6B4 /* ToolbarImage.swift */; };
 		C0EE3BE128052B670077F6B4 /* TestPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EE3BE028052B670077F6B4 /* TestPageView.swift */; };
+		C0EE3BE5280531550077F6B4 /* test_background.png in Resources */ = {isa = PBXBuildFile; fileRef = C0EE3BE4280531550077F6B4 /* test_background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +166,7 @@
 		C0EE3BD82805267D0077F6B4 /* Home-main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Home-main.swift"; sourceTree = "<group>"; };
 		C0EE3BD92805267D0077F6B4 /* ToolbarImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolbarImage.swift; sourceTree = "<group>"; };
 		C0EE3BE028052B670077F6B4 /* TestPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPageView.swift; sourceTree = "<group>"; };
+		C0EE3BE4280531550077F6B4 /* test_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -348,6 +350,7 @@
 				C0EE3BE028052B670077F6B4 /* TestPageView.swift */,
 				0AE5B5772804802E00BD062E /* TestSet.swift */,
 				0AE5B5782804802E00BD062E /* TestView.swift */,
+				C0EE3BE4280531550077F6B4 /* test_background.png */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 			files = (
 				C0EE3BDB2805267D0077F6B4 /* 동물들.jpg in Resources */,
 				0A199A7A280485BE00BDCE14 /* 10.png in Resources */,
+				C0EE3BE5280531550077F6B4 /* test_background.png in Resources */,
 				0A199A6C280485BE00BDCE14 /* 4.png in Resources */,
 				0AE5B55528047F0B00BD062E /* Font in Resources */,
 				0A199A8228048A1900BDCE14 /* 풍덩 심볼.png in Resources */,
