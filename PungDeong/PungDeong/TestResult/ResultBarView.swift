@@ -36,14 +36,24 @@ struct ResultData: Identifiable {
 
 struct ResultBarView: View {
     
+    var result: UserInfo
+    
     //데이터 건네져 옴
-    @State private var resultData: [ResultData] = [
-        ResultData(id: 1, score: 3),
-        ResultData(id: 2, score: 8),
-        ResultData(id: 3, score: 6),
-        ResultData(id: 4, score: 2),
-        ResultData(id: 5, score: 4)
-    ]
+    var resultData: [ResultData]  {
+        return [
+            ResultData(id: 1, score: Double(score(index: 0))),
+            ResultData(id: 2, score: Double(score(index: 1))),
+            ResultData(id: 3, score: Double(score(index: 2))),
+            ResultData(id: 4, score: Double(score(index: 3))),
+            ResultData(id: 5, score: Double(score(index: 4)))
+        ]
+    }
+    
+    func score(index: Int) -> Int {
+        guard let selects = result.test?.selects else { return 0 }
+        
+        return selects[index]
+    }
     
     
     var body: some View {
@@ -61,11 +71,11 @@ struct ResultBarView: View {
                     
                     
                     ZStack {
-                        ProgressView(value: result.score, total: 10)
+                        ProgressView(value: result.score, total: 5)
                             .frame(width: 150,height: 16)
                             .padding(.trailing, 30)
                             .progressViewStyle(ResultProgressStyle())
-                            .tint(result.score > 5 ? Color.pink : Color("main"))
+                            .tint(result.score > 3 ? Color.pink : Color("main"))
                         
                     }
                 }
@@ -76,6 +86,6 @@ struct ResultBarView: View {
 
 struct ResultBarView_Previews: PreviewProvider {
     static var previews: some View {
-        ResultBarView()
+        ResultBarView(result: UserInfo())
     }
 }

@@ -15,55 +15,70 @@ struct TestResultView: View {
     
     var viewModel =  TestResultViewModel()
     
-    @EnvironmentObject var userInfo: UserInfo
+    var userInfo: UserInfo
     
-    @State var type: Int = 1
-    @Binding var shouldPopToRootView : Bool
+    var tpye: Int {
+        userInfo.test?.type ?? 0
+    }
     
-
+    var data: resultData {
+        
+        print("DEBUG: Type is \(userInfo.test?.type ?? 0)")
+        return viewModel.resultType(userInfo.test?.type ?? 0)
+    }
     
-    var onlyResultView: some View = {
-        GeometryReader { geometry in
-            VStack {
-
-                ResultTopView()
-                    .frame(width: geometry.size.width, height: geometry.size.width)
-                    .padding(.top, 20)
-                    
-                
-                ResultBarView()
-                    .offset(x: -geometry.size.width / 10)
-                
-                HStack {
-                    Text("#교수님사랑 #예비대학원생")
-                        .fontWeight(.bold)
-                        .padding(.leading, 25)
-                
-                    Spacer()
-                }
-                .padding(.top, 10)
-                
-                
-                Text("당신은 사실여부가 확실하지 않을 때는 반드시 전문가에게 찾아가고야 마는 대학원생 물개시군요!. 불확실한 정보 보다는 교수님의 말을 전적으로 믿으시는 당신!")
-                    .lineLimit(4)
-                    .multilineTextAlignment(.leading)
-                    .fixedSize(horizontal: false, vertical: true)
-                    .font(.body)
-                    .padding(.horizontal, 20)
-                    .padding(.top, 1)
-                    
-                    
-                
-            }
-        }
-    }()
     
+    
+   
+    
+    @Binding var shouldPopToRootView: Bool
+    
+    
+//
+//    var onlyResultView: some View = {
+//        GeometryReader { geometry in
+//
+//        }
+//    }()
+//
     var body: some View {
         GeometryReader { geometry in
             ZStack {
                 VStack {
                     ScrollView {
-                        onlyResultView
+                        
+                        
+                        VStack {
+
+                            ResultTopView(result: self.data)
+                                .frame(width: geometry.size.width, height: geometry.size.width)
+                                
+                                
+                            
+                            ResultBarView(result: self.userInfo)
+                                .offset(x: -geometry.size.width / 10)
+                            
+                            HStack {
+                                Text("#교수님사랑 #예비대학원생")
+                                    .fontWeight(.bold)
+                                    .padding(.leading, 25)
+                            
+                                Spacer()
+                            }
+                            .padding(.top, 10)
+                            
+                            
+                            Text(viewModel.resultType(userInfo.test?.type ?? 0).description)
+                                .lineLimit(5)
+                                .multilineTextAlignment(.leading)
+                                .fixedSize(horizontal: false, vertical: true)
+                                .font(.body)
+                                .padding(.horizontal, 20)
+                                .padding(.top, 1)
+                                
+                                
+                            
+                        }
                     }
                     
                     
@@ -104,8 +119,6 @@ struct TestResultView: View {
             }
         }
     }
-    
-    
 }
 
 
@@ -121,7 +134,7 @@ extension TestResultView: ShareButtonDelegate {
         print("DEBUG: save photo delegate method")
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
-            if let image = onlyResultView.takeScreenshot(origin: CGPoint(x: 0, y: 50), size: CGSize(width: 600, height: 600)) {
+            if let image = body.takeScreenshot(origin: CGPoint(x: 0, y: 50), size: CGSize(width: 600, height: 600)) {
                 viewModel.saveImage(image: image)
             } else {
                 print("DEBUG : image Capture Failed")
@@ -134,7 +147,7 @@ extension TestResultView: ShareButtonDelegate {
     func sharePhotoButtonTapped() {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
-            if let image = onlyResultView.takeScreenshot(origin: CGPoint(x: 0, y: 50), size: CGSize(width: 600, height: 600)) {
+            if let image = body.takeScreenshot(origin: CGPoint(x: 0, y: 50), size: CGSize(width: 600, height: 600)) {
                 viewModel.sharePicture(img: image)
             } else {
                 print("DEBUG : image Capture Failed")
@@ -177,7 +190,7 @@ struct ResultProgressStyle: ProgressViewStyle {
 struct TestResultView_Previews: PreviewProvider {
     static var previews: some View {
 
-         TestResultView(shouldPopToRootView: .constant(true))
+        TestResultView(userInfo: UserInfo(), shouldPopToRootView: .constant(true))
 
     }
 }

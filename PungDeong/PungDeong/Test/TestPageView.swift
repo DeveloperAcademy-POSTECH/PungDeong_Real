@@ -182,7 +182,7 @@ struct TestPageView: View {
         }
         .background(
             NavigationLink(isActive: $isFinished, destination: {
-                TestResultView(shouldPopToRootView: $rootIsActive)
+                TestResultView(userInfo: userInfo, shouldPopToRootView: $rootIsActive)
                     .navigationBarHidden(true)
             }, label: {
                 EmptyView()
