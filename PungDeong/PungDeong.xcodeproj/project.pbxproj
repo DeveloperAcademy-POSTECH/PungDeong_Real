@@ -82,6 +82,7 @@
 		C0EE3BE5280531550077F6B4 /* test_background.png in Resources */ = {isa = PBXBuildFile; fileRef = C0EE3BE4280531550077F6B4 /* test_background.png */; };
 		C0EE3BE9280543F40077F6B4 /* TestPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EE3BE8280543F40077F6B4 /* TestPageView.swift */; };
 		C0EE3BEB280545070077F6B4 /* RetestButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EE3BEA280545070077F6B4 /* RetestButton.swift */; };
+		C0EE3BEF280548F80077F6B4 /* TestResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EE3BEE280548F80077F6B4 /* TestResultModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +168,7 @@
 		C0EE3BE4280531550077F6B4 /* test_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_background.png; sourceTree = "<group>"; };
 		C0EE3BE8280543F40077F6B4 /* TestPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPageView.swift; sourceTree = "<group>"; };
 		C0EE3BEA280545070077F6B4 /* RetestButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetestButton.swift; sourceTree = "<group>"; };
+		C0EE3BEE280548F80077F6B4 /* TestResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +280,7 @@
 				0AE5B4EF280475B800BD062E /* ContentView.swift */,
 				0AE5B4F1280475B900BD062E /* Assets.xcassets */,
 				0AE5B4F3280475B900BD062E /* Preview Content */,
+				C0EE3BEE280548F80077F6B4 /* TestResultModel.swift */,
 			);
 			path = PungDeong;
 			sourceTree = "<group>";
@@ -589,6 +592,7 @@
 				C0EE3BE9280543F40077F6B4 /* TestPageView.swift in Sources */,
 				0AE5B57B2804802E00BD062E /* TestSet.swift in Sources */,
 				C0EE3BDF2805267D0077F6B4 /* ToolbarImage.swift in Sources */,
+				C0EE3BEF280548F80077F6B4 /* TestResultModel.swift in Sources */,
 				0AE5B58A280482DE00BD062E /* ProfileView.swift in Sources */,
 				C0EE3BDE2805267D0077F6B4 /* Home-main.swift in Sources */,
 				0AE5B5872804806D00BD062E /* SwiftUIView-imagescrollview.swift in Sources */,
