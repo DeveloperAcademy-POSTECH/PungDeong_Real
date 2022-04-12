@@ -22,9 +22,7 @@ struct TestResultView: View {
     var onlyResultView: some View = {
         GeometryReader { geometry in
             VStack {
-                
-    
-                    
+
                 ResultTopView()
                     .frame(width: geometry.size.width, height: geometry.size.width)
                     .padding(.top, 20)
@@ -75,6 +73,8 @@ struct TestResultView: View {
                             print("DEBUG: Button has tapped")
                             
                             // 메인화면 이동 메서드 호출
+                            
+                            
                             
                         } label: {
                             HStack {

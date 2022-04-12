@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-//import Alamofire
+import Alamofire
 
-//import KakaoSDKLink
-//import KakaoSDKCommon
-//// 기본 템플릿 사용 시 필요
-//import KakaoSDKTemplate
+import KakaoSDKLink
+import KakaoSDKCommon
+// 기본 템플릿 사용 시 필요
+import KakaoSDKTemplate
 
 
 
@@ -24,18 +24,18 @@ class TestResultViewModel: NSObject {
         //결과 공유  type 1 ID
         let templateId = 74828
         
-//        LinkApi.shared.customLink(templateId: Int64(templateId)) { (linkResult, error) in
-//            if let error = error {
-//                print(error)
-//            }
-//            else {
-//                print("customLink() success.")
-//                if let linkResult = linkResult {
-//                    // 카카오톡 오픈
-//                    UIApplication.shared.open(linkResult.url, options: [:], completionHandler: nil)
-//                }
-//            }
-//        }
+        LinkApi.shared.customLink(templateId: Int64(templateId)) { (linkResult, error) in
+            if let error = error {
+                print(error)
+            }
+            else {
+                print("customLink() success.")
+                if let linkResult = linkResult {
+                    // 카카오톡 오픈
+                    UIApplication.shared.open(linkResult.url, options: [:], completionHandler: nil)
+                }
+            }
+        }
     }
     
     
@@ -55,10 +55,4 @@ class TestResultViewModel: NSObject {
         let av = UIActivityViewController(activityItems: [img], applicationActivities: nil)
         UIApplication.shared.windows.first?.rootViewController?.present(av, animated: true, completion: nil)
     }
-    
-//    @objc func saveCompleted() {
-////        print("DEBUG: image saved completely")
-//    }
-    
-    
 }

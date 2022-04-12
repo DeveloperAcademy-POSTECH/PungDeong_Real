@@ -18,6 +18,8 @@ struct TestPageView: View {
     @State var pageIndex: Int = 0
     @State var currentItem: TestPage
     
+    @State var isFinished: Bool = false
+    
     init(test: Test) {
         self.test = test
         self.currentItem = test.pages[0]
@@ -29,6 +31,18 @@ struct TestPageView: View {
     @State private var showingAlert = false
     @State private var isLastPageToggle = false
     @State private var isLastPageToggleSave = false
+    
+    func makeTestesult() -> [Int] {
+        
+        var testResult: [Int] = [Int](repeating: 0, count: 5)
+        
+        for type in Answer.answeredType {
+            if(type > 0 && type < 6) {
+                testResult[type - 1] += 1
+            }
+        }
+        return testResult
+    }
     
     func selectingType(index: Int) {
         let selectedType = test.pages[pageIndex].choices[index].type
@@ -44,6 +58,10 @@ struct TestPageView: View {
             
         } else {
             // View 전환 메서드 호출
+            let testResult = makeTestesult()
+            print(testResult)
+            self.isFinished.toggle()
+       
         }
         
     }
@@ -51,7 +69,7 @@ struct TestPageView: View {
     var body: some View {
         ZStack {
             // Background Color
-            Color("TestBackground").ignoresSafeArea()
+            Color("background").ignoresSafeArea()
             
             VStack {
                 
@@ -84,15 +102,21 @@ struct TestPageView: View {
                     }
                    
                 }
-                    .padding(.bottom, 10)
+                    .padding(.bottom, 6)
             
                 Text(test.pages[pageIndex].text)
-                    .frame(height: 200)
                     .frame(maxWidth: .infinity)
-                    .font(.title3)
+                    .font(.body)
+                    .lineSpacing(4.0)
                     .background()
-                    .cornerRadius(20)
-                    .padding(.bottom, 10)
+                    .padding(20)
+                    .padding(.vertical, 10)
+                    .background()
+                    .cornerRadius(20).overlay(
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(Color.gray.opacity(0.4), lineWidth: 1)
+                    )
+                    
                 
               Spacer()
                 
@@ -126,8 +150,19 @@ struct TestPageView: View {
                 
                 
               
-            }
+            }.ignoresSafeArea()
             .padding(20)
+        }
+        .background(
+            NavigationLink(isActive: $isFinished, destination: {
+                TestResultView()
+                    .navigationBarHidden(true)
+            }, label: {
+                EmptyView()
+            })
+        )
+        .onDisappear {
+            // 뷰가 사라지기 전에 네트워킹 메서드를 통해 전달
         }
     }
 }
@@ -141,12 +176,12 @@ struct SelectButtonView: View {
     
     var body: some View {
         Text(text)
-            .font(.title3)
+            .font(.body)
             .fontWeight(.semibold)
             .foregroundColor(.white)
             .frame(maxWidth: .infinity)
-            .frame(height: 140)
-            .background(Color("TestButton"))
+            .padding()
+            .background(Color("main"))
             .cornerRadius(10)
 
     }
@@ -162,12 +197,12 @@ struct NavButtonView: View {
         let inVisible = ((text == "arrow.left") && (pageIndex == 0))||((text == "arrow.right") && (pageIndex == test.pages.count - 1))
         Image(systemName: text)
             .frame(width: 44, height: 44)
-            .font(.body)
+            .font(.subheadline)
             .foregroundColor(Color.black)
             .background(Color.white)
             .cornerRadius(100.0).overlay(
                 RoundedRectangle(cornerRadius: 20)
-                    .stroke(Color.black, lineWidth: 1)
+                    .stroke(Color.gray.opacity(0.4), lineWidth: 1)
             ).opacity(inVisible ? 0 : 1 )
             .disabled(inVisible)
 
@@ -180,13 +215,13 @@ struct PageIndexButtonView: View {
     var body: some View {
         
         Text(" \(pageIndex+1) / \(test.pages.count) ")
-            .frame(width: 80, height: 44)
-            .font(.body)
+            .frame(width: 72, height: 44)
+            .font(.footnote)
             .foregroundColor(Color.black)
             .background(Color.white)
             .cornerRadius(100.0).overlay(
                 RoundedRectangle(cornerRadius: 20)
-                    .stroke(Color.black, lineWidth: 1)
+                    .stroke(Color.gray.opacity(0.4), lineWidth: 1)
             )
             .disabled(true)
 
@@ -195,9 +230,6 @@ struct PageIndexButtonView: View {
 
 struct TestPageView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView{
-            TestPageView(test: test)
-        }
-        .previewInterfaceOrientation(.portrait)
+        TestPageView(test: test)
     }
 }

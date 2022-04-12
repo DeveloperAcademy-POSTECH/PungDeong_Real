@@ -7,7 +7,7 @@
 
 import SwiftUI
 import Firebase
-//import KakaoSDKCommon
+import KakaoSDKCommon
 
 @main
 struct PungDeongApp: App {
@@ -21,9 +21,11 @@ struct PungDeongApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(googleUserAuth)
-                .environmentObject(userInfo)
+//            ContentView()
+//                .environmentObject(googleUserAuth)
+//                .environmentObject(userInfo)
+            
+            Home_main()
         }
     }
 }
@@ -34,7 +36,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool
     {
 
-//        KakaoSDK.initSDK(appKey: "d279a8725a4a2fcccbfcb999e0f80e14")
+        KakaoSDK.initSDK(appKey: "d279a8725a4a2fcccbfcb999e0f80e14")
 
         return true
     }
