@@ -11,11 +11,10 @@ import SwiftUI
 
 struct TestPageView: View {
     
+    @EnvironmentObject var userInfo: UserInfo
     
     //Pop to root View 를 위한 navigation View is Active
     @Binding var rootIsActive: Bool
-
-    
     
     //MARK: - Propeties
     
@@ -62,8 +61,25 @@ struct TestPageView: View {
             
         } else {
             // View 전환 메서드 호출
+            
+            
+            
             let testResult = makeTestesult()
             print(testResult)
+            
+            var typeResult = 0
+            var typeMax = 0
+            var index = 0
+            for i in testResult {
+                index += 1
+                if (i > typeMax) {
+                    typeMax = i
+                    typeResult = index
+                }
+            }
+            
+            FirebaseDB().addTest(email: userInfo.email ?? "", test: Test1(selects: testResult, type: typeResult))
+            
             self.isFinished.toggle()
        
         }
@@ -73,12 +89,13 @@ struct TestPageView: View {
     var body: some View {
         ZStack {
             // Background Color
-            Image("background")
+            Image("test_background")
                 .resizable()
-                .aspectRatio(contentMode: .fit)
+                .aspectRatio(contentMode: .fill)
                 
                 
-                .ignoresSafeArea()
+                
+                
             
             VStack {
                 
@@ -159,8 +176,9 @@ struct TestPageView: View {
                 
                 
               
-            }.ignoresSafeArea()
+            }
             .padding(20)
+            .padding(.vertical, 20)
         }
         .background(
             NavigationLink(isActive: $isFinished, destination: {

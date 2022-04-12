@@ -76,12 +76,12 @@
 		C0EE3BD12805228E0077F6B4 /* KakaoSDKTemplate in Frameworks */ = {isa = PBXBuildFile; productRef = C0EE3BD02805228E0077F6B4 /* KakaoSDKTemplate */; };
 		C0EE3BDA2805267D0077F6B4 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EE3BD42805267C0077F6B4 /* HeaderView.swift */; };
 		C0EE3BDB2805267D0077F6B4 /* 동물들.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0EE3BD52805267D0077F6B4 /* 동물들.jpg */; };
-		C0EE3BDC2805267D0077F6B4 /* RetestButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EE3BD62805267D0077F6B4 /* RetestButton.swift */; };
 		C0EE3BDD2805267D0077F6B4 /* 심볼.png in Resources */ = {isa = PBXBuildFile; fileRef = C0EE3BD72805267D0077F6B4 /* 심볼.png */; };
 		C0EE3BDE2805267D0077F6B4 /* Home-main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EE3BD82805267D0077F6B4 /* Home-main.swift */; };
 		C0EE3BDF2805267D0077F6B4 /* ToolbarImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EE3BD92805267D0077F6B4 /* ToolbarImage.swift */; };
-		C0EE3BE128052B670077F6B4 /* TestPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EE3BE028052B670077F6B4 /* TestPageView.swift */; };
 		C0EE3BE5280531550077F6B4 /* test_background.png in Resources */ = {isa = PBXBuildFile; fileRef = C0EE3BE4280531550077F6B4 /* test_background.png */; };
+		C0EE3BE9280543F40077F6B4 /* TestPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EE3BE8280543F40077F6B4 /* TestPageView.swift */; };
+		C0EE3BEB280545070077F6B4 /* RetestButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EE3BEA280545070077F6B4 /* RetestButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,12 +161,12 @@
 		C0EE3BC428051CD50077F6B4 /* FloatingMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingMenuView.swift; sourceTree = "<group>"; };
 		C0EE3BD42805267C0077F6B4 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		C0EE3BD52805267D0077F6B4 /* 동물들.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "동물들.jpg"; sourceTree = "<group>"; };
-		C0EE3BD62805267D0077F6B4 /* RetestButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetestButton.swift; sourceTree = "<group>"; };
 		C0EE3BD72805267D0077F6B4 /* 심볼.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "심볼.png"; sourceTree = "<group>"; };
 		C0EE3BD82805267D0077F6B4 /* Home-main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Home-main.swift"; sourceTree = "<group>"; };
 		C0EE3BD92805267D0077F6B4 /* ToolbarImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolbarImage.swift; sourceTree = "<group>"; };
-		C0EE3BE028052B670077F6B4 /* TestPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPageView.swift; sourceTree = "<group>"; };
 		C0EE3BE4280531550077F6B4 /* test_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_background.png; sourceTree = "<group>"; };
+		C0EE3BE8280543F40077F6B4 /* TestPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPageView.swift; sourceTree = "<group>"; };
+		C0EE3BEA280545070077F6B4 /* RetestButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetestButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,8 +336,8 @@
 				C0EE3BD52805267D0077F6B4 /* 동물들.jpg */,
 				C0EE3BD72805267D0077F6B4 /* 심볼.png */,
 				C0EE3BD42805267C0077F6B4 /* HeaderView.swift */,
+				C0EE3BEA280545070077F6B4 /* RetestButton.swift */,
 				C0EE3BD82805267D0077F6B4 /* Home-main.swift */,
-				C0EE3BD62805267D0077F6B4 /* RetestButton.swift */,
 				C0EE3BD92805267D0077F6B4 /* ToolbarImage.swift */,
 			);
 			path = Home;
@@ -347,8 +347,8 @@
 			isa = PBXGroup;
 			children = (
 				0AE5B57A2804802E00BD062E /* TestModel.swift */,
-				C0EE3BE028052B670077F6B4 /* TestPageView.swift */,
 				0AE5B5772804802E00BD062E /* TestSet.swift */,
+				C0EE3BE8280543F40077F6B4 /* TestPageView.swift */,
 				0AE5B5782804802E00BD062E /* TestView.swift */,
 				C0EE3BE4280531550077F6B4 /* test_background.png */,
 			);
@@ -581,15 +581,16 @@
 				0AE5B57C2804802E00BD062E /* TestView.swift in Sources */,
 				0AE5B55E28047F1900BD062E /* GoogleLogIn.swift in Sources */,
 				C0EE3BDA2805267D0077F6B4 /* HeaderView.swift in Sources */,
+				C0EE3BEB280545070077F6B4 /* RetestButton.swift in Sources */,
 				0AE5B56428047F5000BD062E /* FirebaseDB.swift in Sources */,
 				0AE5B55C28047F1900BD062E /* AppSymbol.swift in Sources */,
 				0AE5B56328047F5000BD062E /* UserInfo.swift in Sources */,
 				0AE5B55F28047F1900BD062E /* AppleLogIn.swift in Sources */,
+				C0EE3BE9280543F40077F6B4 /* TestPageView.swift in Sources */,
 				0AE5B57B2804802E00BD062E /* TestSet.swift in Sources */,
 				C0EE3BDF2805267D0077F6B4 /* ToolbarImage.swift in Sources */,
 				0AE5B58A280482DE00BD062E /* ProfileView.swift in Sources */,
 				C0EE3BDE2805267D0077F6B4 /* Home-main.swift in Sources */,
-				C0EE3BE128052B670077F6B4 /* TestPageView.swift in Sources */,
 				0AE5B5872804806D00BD062E /* SwiftUIView-imagescrollview.swift in Sources */,
 				C0EE3BC828051CD50077F6B4 /* TestResultViewModel.swift in Sources */,
 				C0EE3BC728051CD50077F6B4 /* ResultBarView.swift in Sources */,
@@ -599,7 +600,6 @@
 				0AE5B55B28047F1900BD062E /* GoogleUserAuthModel.swift in Sources */,
 				C0EE3BC528051CD50077F6B4 /* View.swift in Sources */,
 				0AE5B5862804806D00BD062E /* SwiftUIView-teststartbutton.swift in Sources */,
-				C0EE3BDC2805267D0077F6B4 /* RetestButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

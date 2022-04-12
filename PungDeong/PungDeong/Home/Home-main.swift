@@ -27,24 +27,28 @@ struct Home_main: View {
                     
                     HeaderView()
                     
+                    Spacer()
+                    
                     
                     NavigationLink(
                         destination: TestView(rootIsActive: self.$isActive).navigationBarHidden(true),
                             isActive: self.$isActive
                         ) {
                             RetestButton()
+                                
                         }
                         .isDetailLink(false)
-                        .navigationBarTitle("Root")
+                        .navigationBarTitle("Home")
                     
                     
                     
                   
                     
-                    Spacer()
+                    
                     
                 }
-                .padding()
+                .padding(.horizontal, 20)
+                
                 .toolbar {
                     NavigationLink(
                         destination: ProfileView(),

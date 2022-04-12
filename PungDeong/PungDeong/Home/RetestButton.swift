@@ -10,12 +10,13 @@ import SwiftUI
 struct RetestButton: View {
     var body: some View {
         Text("테스트 다시하기")
-            .frame(width: 200, height: 50, alignment: .center)
-            .background(Color(red: 125/255, green: 237/255, blue: 255/255, opacity: 1.0))
+            .fontWeight(.bold)
+            .frame(height: 50, alignment: .center)
+            .frame(maxWidth: .infinity)
+            .background(Color(red: 0.455, green: 0.702, blue: 1.000, opacity: 1.0))
             .foregroundColor(Color.white)
             .cornerRadius(8)
-            .padding()
-            .padding()
+            
     }
 }
 

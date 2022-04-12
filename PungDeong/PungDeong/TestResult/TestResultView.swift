@@ -163,7 +163,7 @@ struct ResultProgressStyle: ProgressViewStyle {
                 //반응형 UI 로 로직 수정 필요
                 ForEach(1..<5) { i in
                     Rectangle()
-                        .frame(width: 1.5, height: 20)
+                        .frame(width: 1.5, height: 10)
                         .foregroundColor(.white)
                         .offset(x: CGFloat(-2 + i * Int(width) / 5))
                 }
