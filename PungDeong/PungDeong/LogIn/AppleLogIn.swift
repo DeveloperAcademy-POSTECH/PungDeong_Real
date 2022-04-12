@@ -41,7 +41,7 @@ struct AppleLogIn: View {
 
 final class SignInWithAppleButton: UIViewRepresentable {
     func makeUIView(context: Context) -> ASAuthorizationAppleIDButton {
-        return ASAuthorizationAppleIDButton(type: .signIn, style: .whiteOutline)
+        return ASAuthorizationAppleIDButton(type: .signIn, style: .black)
     }
     
     func updateUIView(_ uiView: ASAuthorizationAppleIDButton, context: Context) {

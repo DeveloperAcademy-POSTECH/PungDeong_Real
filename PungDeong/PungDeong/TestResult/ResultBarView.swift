@@ -23,7 +23,7 @@ struct ResultData: Identifiable {
         case 3:
             return "전문가 자문"
         case 4:
-            return "사실 재확인"
+            return "논리 점검"
         case 5:
             return "중립"
         default:

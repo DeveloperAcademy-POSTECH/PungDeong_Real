@@ -24,7 +24,7 @@ struct LogInView: View {
                 
                 Spacer()
                 
-                VStack{
+                VStack(spacing: 15){
                     AppleLogIn(isPresented: $isPresented)
                     GoogleLogIn(isPresented: $isPresented)
                 }.padding()
