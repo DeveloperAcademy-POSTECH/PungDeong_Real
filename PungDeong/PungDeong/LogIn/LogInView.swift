@@ -10,6 +10,7 @@ import SwiftUI
 struct LogInView: View {
     let screenWidth = UIScreen.main.bounds.width
     let screenHeight = UIScreen.main.bounds.height
+    @Binding var isPresented: Bool
     
     var body: some View {
         ZStack{
@@ -24,8 +25,8 @@ struct LogInView: View {
                 Spacer()
                 
                 VStack{
-                    AppleLogIn()
-                    GoogleLogIn()
+                    AppleLogIn(isPresented: $isPresented)
+                    GoogleLogIn(isPresented: $isPresented)
                 }.padding()
             }
         }

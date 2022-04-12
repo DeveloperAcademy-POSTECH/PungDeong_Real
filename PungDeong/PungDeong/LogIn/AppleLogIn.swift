@@ -11,6 +11,8 @@ import AuthenticationServices
 struct AppleLogIn: View {
     @EnvironmentObject var userInfo: UserInfo
     @State private var appleSignInDelegate: SignInWithAppleDelegate! = nil
+    @Binding var isPresented: Bool
+
     let screenWidth = UIScreen.main.bounds.width
     let screenHeight = UIScreen.main.bounds.height
     
@@ -32,6 +34,7 @@ struct AppleLogIn: View {
         appleSignInDelegate = SignInWithAppleDelegate { email in
             userInfo.email = email
             FirebaseDB().setUserInfo(email: email, userInfo: userInfo)
+            isPresented.toggle()
         }
       }
 }

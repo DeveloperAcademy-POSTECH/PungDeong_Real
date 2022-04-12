@@ -13,6 +13,8 @@ import GoogleSignIn
 struct GoogleLogIn: View {
     @EnvironmentObject var userInfo: UserInfo
     @EnvironmentObject var vm: GoogleUserAuthModel
+    @Binding var isPresented: Bool
+
     let screenWidth = UIScreen.main.bounds.width
     let screenHeight = UIScreen.main.bounds.height
         
@@ -20,6 +22,7 @@ struct GoogleLogIn: View {
         Button(action: {vm.signIn { email in
             userInfo.email = email
             FirebaseDB().setUserInfo(email: email, userInfo: userInfo)
+            isPresented.toggle()
         }}, label: {
             HStack(alignment: .center, spacing: 24) {
                 Image("Google")

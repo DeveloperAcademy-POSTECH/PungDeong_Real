@@ -14,6 +14,7 @@ struct PungDeongApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @StateObject var googleUserAuth: GoogleUserAuthModel =  GoogleUserAuthModel()
     var userInfo = UserInfo()
+    @State private var isPresented = true
     
     init() {
         FirebaseApp.configure()
@@ -26,6 +27,11 @@ struct PungDeongApp: App {
             Home_main()
                 .environmentObject(googleUserAuth)
                 .environmentObject(userInfo)
+                .fullScreenCover(isPresented: $isPresented) {
+                    LogInView(isPresented: $isPresented)
+                        .environmentObject(googleUserAuth)
+                        .environmentObject(userInfo)
+                }
         }
     }
 }
