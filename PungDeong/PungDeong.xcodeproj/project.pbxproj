@@ -59,11 +59,6 @@
 		0AE5B5852804806D00BD062E /* SwiftUIView-nextbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B5822804806D00BD062E /* SwiftUIView-nextbutton.swift */; };
 		0AE5B5862804806D00BD062E /* SwiftUIView-teststartbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B5832804806D00BD062E /* SwiftUIView-teststartbutton.swift */; };
 		0AE5B5872804806D00BD062E /* SwiftUIView-imagescrollview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B5842804806D00BD062E /* SwiftUIView-imagescrollview.swift */; };
-		0AE5B590280482EA00BD062E /* sample.imageset in Resources */ = {isa = PBXBuildFile; fileRef = 0AE5B58B280482E900BD062E /* sample.imageset */; };
-		0AE5B591280482EA00BD062E /* VeryLightBlue.colorset in Resources */ = {isa = PBXBuildFile; fileRef = 0AE5B58C280482E900BD062E /* VeryLightBlue.colorset */; };
-		0AE5B592280482EA00BD062E /* LightBlue.colorset in Resources */ = {isa = PBXBuildFile; fileRef = 0AE5B58D280482E900BD062E /* LightBlue.colorset */; };
-		0AE5B593280482EA00BD062E /* CustomGray.colorset in Resources */ = {isa = PBXBuildFile; fileRef = 0AE5B58E280482E900BD062E /* CustomGray.colorset */; };
-		0AE5B594280482EA00BD062E /* CustomBlue.colorset in Resources */ = {isa = PBXBuildFile; fileRef = 0AE5B58F280482EA00BD062E /* CustomBlue.colorset */; };
 		C0EE3BC528051CD50077F6B4 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EE3BBF28051CD50077F6B4 /* View.swift */; };
 		C0EE3BC628051CD50077F6B4 /* TestResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EE3BC028051CD50077F6B4 /* TestResultView.swift */; };
 		C0EE3BC728051CD50077F6B4 /* ResultBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EE3BC128051CD50077F6B4 /* ResultBarView.swift */; };
@@ -153,11 +148,6 @@
 		0AE5B5822804806D00BD062E /* SwiftUIView-nextbutton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftUIView-nextbutton.swift"; sourceTree = "<group>"; };
 		0AE5B5832804806D00BD062E /* SwiftUIView-teststartbutton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftUIView-teststartbutton.swift"; sourceTree = "<group>"; };
 		0AE5B5842804806D00BD062E /* SwiftUIView-imagescrollview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftUIView-imagescrollview.swift"; sourceTree = "<group>"; };
-		0AE5B58B280482E900BD062E /* sample.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sample.imageset; sourceTree = "<group>"; };
-		0AE5B58C280482E900BD062E /* VeryLightBlue.colorset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = VeryLightBlue.colorset; sourceTree = "<group>"; };
-		0AE5B58D280482E900BD062E /* LightBlue.colorset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LightBlue.colorset; sourceTree = "<group>"; };
-		0AE5B58E280482E900BD062E /* CustomGray.colorset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CustomGray.colorset; sourceTree = "<group>"; };
-		0AE5B58F280482EA00BD062E /* CustomBlue.colorset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CustomBlue.colorset; sourceTree = "<group>"; };
 		C0EE3BBF28051CD50077F6B4 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		C0EE3BC028051CD50077F6B4 /* TestResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestResultView.swift; sourceTree = "<group>"; };
 		C0EE3BC128051CD50077F6B4 /* ResultBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultBarView.swift; sourceTree = "<group>"; };
@@ -382,11 +372,6 @@
 		0AE5B588280482CA00BD062E /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				0AE5B58F280482EA00BD062E /* CustomBlue.colorset */,
-				0AE5B58E280482E900BD062E /* CustomGray.colorset */,
-				0AE5B58D280482E900BD062E /* LightBlue.colorset */,
-				0AE5B58B280482E900BD062E /* sample.imageset */,
-				0AE5B58C280482E900BD062E /* VeryLightBlue.colorset */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -556,23 +541,18 @@
 				0A199A6F280485BE00BDCE14 /* test2.png in Resources */,
 				0AE5B4F5280475B900BD062E /* Preview Assets.xcassets in Resources */,
 				0AE5B4F2280475B900BD062E /* Assets.xcassets in Resources */,
-				0AE5B591280482EA00BD062E /* VeryLightBlue.colorset in Resources */,
 				0A199A6D280485BE00BDCE14 /* 6.png in Resources */,
 				0A199A78280485BE00BDCE14 /* 11.png in Resources */,
 				C0EE3BDD2805267D0077F6B4 /* 심볼.png in Resources */,
 				0A199A79280485BE00BDCE14 /* 1.png in Resources */,
-				0AE5B592280482EA00BD062E /* LightBlue.colorset in Resources */,
-				0AE5B590280482EA00BD062E /* sample.imageset in Resources */,
 				0A199A72280485BE00BDCE14 /* 12.png in Resources */,
 				0A199A6E280485BE00BDCE14 /* 8.png in Resources */,
 				0A199A76280485BE00BDCE14 /* 3.png in Resources */,
-				0AE5B593280482EA00BD062E /* CustomGray.colorset in Resources */,
 				0A199A7B280485BE00BDCE14 /* 9.png in Resources */,
 				0AE5B51C280477E700BD062E /* GoogleService-Info.plist in Resources */,
 				0A199A77280485BE00BDCE14 /* test1.png in Resources */,
 				C0EE3BFA280564050077F6B4 /* character_2.png in Resources */,
 				C0EE3BF9280564050077F6B4 /* character_3.png in Resources */,
-				0AE5B594280482EA00BD062E /* CustomBlue.colorset in Resources */,
 				0A199A73280485BE00BDCE14 /* 5.png in Resources */,
 				C0EE3BF8280564050077F6B4 /* character_4.png in Resources */,
 				0A199A75280485BE00BDCE14 /* seal.png in Resources */,
@@ -799,6 +779,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = right;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -829,6 +810,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = right;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
