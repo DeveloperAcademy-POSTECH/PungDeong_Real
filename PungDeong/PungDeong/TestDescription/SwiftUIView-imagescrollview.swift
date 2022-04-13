@@ -62,11 +62,11 @@ struct TestDescriptionContent: View {
                         }
                 })
             }
+                if(!isShown) {
+                    
+                }
 
             }
-
-            
-            
             
             
             if isShown {
@@ -86,19 +86,11 @@ struct TestDescriptionContent: View {
                 .frame(height: 60)
                 }
             } else {
-                // 버튼 없어용
-            }
-            if(!isAnimationEnd){
-                Button(action:{
-                    withAnimation {
-                        self.isAnimationEnd.toggle()
-                    }
-                }, label:{
-                    VStack {
-                        Image(systemName: "arrow.forward.circle").resizable().frame(width: 80, height: 80, alignment: .center).padding()
-                        Text("오른쪽으로 밀어주세요")
-                    }.frame(width: 200, height: 200, alignment: .center).background(Color.gray).foregroundColor(Color.white).cornerRadius(20.0).opacity(0.9)
-                }).transition(.opacity)
+                // 슬라이드 안내 문구
+                VStack {
+                    Spacer()
+                    Text("왼쪽으로 슬라이드").frame(height: 60).font(.subheadline).opacity(0.7)
+                }
             }
         }
         .background(
