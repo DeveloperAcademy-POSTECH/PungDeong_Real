@@ -17,7 +17,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>kakaod279a8725a4a2fcccbfcb999e0f80e14://kakaolink</string>
+				<string>kakaod279a8725a4a2fcccbfcb999e0f80e14</string>
 			</array>
 		</dict>
 		<dict>
