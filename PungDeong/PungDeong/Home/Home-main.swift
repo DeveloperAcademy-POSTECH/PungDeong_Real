@@ -33,17 +33,23 @@ struct Home_main: View {
                     
                     if userInfo.email != nil {
                         NavigationLink(
-                            destination:
-                                
-                                TestDescriptionContent(rootIsActive: $isActive)
-                                .navigationBarHidden(true)
-                                ,
-                                isActive: self.$isActive
-                        ) {
-                            RetestButton()
-                    }
-                    .isDetailLink(false)
-                    .navigationBarTitle("Home")
+                            destination: TestDescriptionContent(rootIsActive: $isActive).navigationBarHidden(true)
+                            ,isActive: self.$isActive){
+                                RetestButton()
+                            }
+                            .isDetailLink(false)
+                            .navigationBarTitle("Home")
+                    } else {
+                        NavigationLink(
+                            destination: LogInView(isPresented: $isActive)){
+                                Text("로그인")
+                                    .fontWeight(.bold)
+                                    .frame(height: 50, alignment: .center)
+                                    .frame(maxWidth: .infinity)
+                                    .background(Color(red: 0.455, green: 0.702, blue: 1.000, opacity: 1.0))
+                                    .foregroundColor(Color.white)
+                                    .cornerRadius(8)
+                            }
                     }
             }
             .padding(.horizontal, 20)
