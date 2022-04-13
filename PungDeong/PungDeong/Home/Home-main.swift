@@ -31,20 +31,20 @@ struct Home_main: View {
                     
                     Spacer()
                     
-                    
-                    NavigationLink(
-                        destination:
-                            
-                            TestDescriptionContent(rootIsActive: $isActive)
-                            .navigationBarHidden(true)
-                            ,
-                            isActive: self.$isActive
-                    ) {
-                        RetestButton()
-                            
-                }
-                .isDetailLink(false)
-                .navigationBarTitle("Home")
+                    if userInfo.email != nil {
+                        NavigationLink(
+                            destination:
+                                
+                                TestDescriptionContent(rootIsActive: $isActive)
+                                .navigationBarHidden(true)
+                                ,
+                                isActive: self.$isActive
+                        ) {
+                            RetestButton()
+                    }
+                    .isDetailLink(false)
+                    .navigationBarTitle("Home")
+                    }
             }
             .padding(.horizontal, 20)
             
