@@ -17,6 +17,8 @@ struct TestResultView: View {
     
     var userInfo: UserInfo
     
+    @State private var showingAlert = false
+    
     var tpye: Int {
         userInfo.test?.type ?? 0
     }
@@ -114,6 +116,12 @@ struct TestResultView: View {
                 ShareMenu(delegate: self)
             }
         }
+        .alert("스크린 캡쳐됨", isPresented: $showingAlert) {
+            Button("Ok") {}
+        } message: {
+            Text("테스트 결과가 사진 앨범에 저장되었습니다.")
+        }
+
     }
 }
 
@@ -129,9 +137,10 @@ extension TestResultView: ShareButtonDelegate {
     func savePhotoButtonTapped() {
         print("DEBUG: save photo delegate method")
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
             if let image = body.takeScreenshot(origin: CGPoint(x: 0, y: 50), size: CGSize(width: 600, height: 680)) {
                 viewModel.saveImage(image: image)
+                showingAlert = true
             } else {
                 print("DEBUG : image Capture Failed")
             }
@@ -142,7 +151,7 @@ extension TestResultView: ShareButtonDelegate {
     
     func sharePhotoButtonTapped() {
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             if let image = body.takeScreenshot(origin: CGPoint(x: 0, y: 50), size: CGSize(width: 600, height: 680)) {
                 viewModel.sharePicture(img: image)
             } else {

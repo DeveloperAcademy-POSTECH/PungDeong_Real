@@ -30,18 +30,19 @@ struct ProfileView: View {
                     VStack {
                         Image(data.image)
                             .resizable()
-                            .frame(width: geometry.size.width*0.5, height: geometry.size.width*0.5)
+                            .frame(width: geometry.size.width*0.5-10, height: geometry.size.width*0.5)
                         Text("\(data.name)")
-                            .font(.largeTitle)
+                            .font(.title)
                             .fontWeight(.bold)
                             .foregroundColor(Color("character_\(userInfo.test?.type ?? 0)"))
+                            .padding([.trailing], 10)
                     }
                     VStack {
                         VStack {
                             Text("프로필")
                                 .foregroundColor(Color("CustomGray"))
-                                .font(.system(size: 25, weight: .bold))
-                                .frame(width: geometry.size.width, height: geometry.size.height*0.07, alignment: .leading)
+                                .font(.system(size: 20, weight: .bold))
+                                .frame(width: geometry.size.width, height: geometry.size.height*0.05, alignment: .leading)
                                 .padding([.leading])
                         }
                         //.frame(width: geometry.size.width, height: 50)
@@ -51,11 +52,11 @@ struct ProfileView: View {
 //                                .frame(width: geometry.size.width, height: geometry.size.height*0.05, alignment: .leading)
 //                                .padding([.leading])
                             Text("\(data.name)")
-                                .frame(width: geometry.size.width, height: geometry.size.height*0.05, alignment: .leading)
-                                .padding([.leading])
+                                .frame(width: geometry.size.width-40, height: geometry.size.height*0.05, alignment: .leading)
+                                .padding([.leading, .trailing], 15)
                             Text("\(data.description)")
-                                .frame(width: geometry.size.width, alignment: .leading)
-                                .padding([.leading])
+                                .frame(width: geometry.size.width-40, alignment: .leading)
+                                .padding([.leading, .trailing], 15)
                                 .fixedSize(horizontal: false, vertical: true)
                         }
                     }
@@ -87,6 +88,7 @@ struct ProfileView: View {
                             }
                         }
                         .buttonStyle(SettingButtonStyle())
+                        .padding([.leading], -15)
 
                         
                         Button(action: {
@@ -97,6 +99,7 @@ struct ProfileView: View {
                             Text("로그아웃")
                         })
                         .buttonStyle(SettingButtonStyle())
+                        .padding([.leading], -15)
                         
                         Button(action: {
                             db.collection("Email").document("\(userInfo.email ?? "")").delete() { err in
@@ -121,6 +124,7 @@ struct ProfileView: View {
                             Text("회원탈퇴")
                         })
                         .buttonStyle(SettingButtonStyle())
+                        .padding([.leading], -15)
                         
                         
 
@@ -151,3 +155,4 @@ struct SettingButtonStyle: ButtonStyle {
             .padding(.horizontal, 30)
     }
 }
+

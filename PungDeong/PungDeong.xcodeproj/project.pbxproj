@@ -57,15 +57,15 @@
 		0AE5B57E2804802E00BD062E /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B57A2804802E00BD062E /* TestModel.swift */; };
 		0AE5B5852804806D00BD062E /* SwiftUIView-nextbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B5822804806D00BD062E /* SwiftUIView-nextbutton.swift */; };
 		0AE5B5862804806D00BD062E /* SwiftUIView-teststartbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B5832804806D00BD062E /* SwiftUIView-teststartbutton.swift */; };
-		C002902728065F03002CA0A7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C002902628065F03002CA0A7 /* ProfileView.swift */; };
 		C002902928065F60002CA0A7 /* Home-main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C002902828065F60002CA0A7 /* Home-main.swift */; };
 		C002902B28065F71002CA0A7 /* GoogleLogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C002902A28065F71002CA0A7 /* GoogleLogIn.swift */; };
-		C002902E28065F86002CA0A7 /* TestResultReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = C002902C28065F86002CA0A7 /* TestResultReview.swift */; };
 		C002902F28065F86002CA0A7 /* UserDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = C002902D28065F86002CA0A7 /* UserDelete.swift */; };
 		C002903128065F9D002CA0A7 /* TestResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C002903028065F9D002CA0A7 /* TestResultViewModel.swift */; };
 		C00290332806675C002CA0A7 /* SwiftUIView-imagescrollview.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00290322806675C002CA0A7 /* SwiftUIView-imagescrollview.swift */; };
 		C002903528066773002CA0A7 /* TestPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C002903428066773002CA0A7 /* TestPageView.swift */; };
 		C05AA88E2806972800AE67F1 /* kakao.png in Resources */ = {isa = PBXBuildFile; fileRef = C05AA88D2806972800AE67F1 /* kakao.png */; };
+		C05AA89128069ADD00AE67F1 /* TestResultReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05AA88F28069ADD00AE67F1 /* TestResultReview.swift */; };
+		C05AA89228069ADD00AE67F1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05AA89028069ADD00AE67F1 /* ProfileView.swift */; };
 		C0EE3BC528051CD50077F6B4 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EE3BBF28051CD50077F6B4 /* View.swift */; };
 		C0EE3BC628051CD50077F6B4 /* TestResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EE3BC028051CD50077F6B4 /* TestResultView.swift */; };
 		C0EE3BC728051CD50077F6B4 /* ResultBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EE3BC128051CD50077F6B4 /* ResultBarView.swift */; };
@@ -149,15 +149,15 @@
 		0AE5B57A2804802E00BD062E /* TestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 		0AE5B5822804806D00BD062E /* SwiftUIView-nextbutton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftUIView-nextbutton.swift"; sourceTree = "<group>"; };
 		0AE5B5832804806D00BD062E /* SwiftUIView-teststartbutton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftUIView-teststartbutton.swift"; sourceTree = "<group>"; };
-		C002902628065F03002CA0A7 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		C002902828065F60002CA0A7 /* Home-main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Home-main.swift"; sourceTree = "<group>"; };
 		C002902A28065F71002CA0A7 /* GoogleLogIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleLogIn.swift; sourceTree = "<group>"; };
-		C002902C28065F86002CA0A7 /* TestResultReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestResultReview.swift; sourceTree = "<group>"; };
 		C002902D28065F86002CA0A7 /* UserDelete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDelete.swift; sourceTree = "<group>"; };
 		C002903028065F9D002CA0A7 /* TestResultViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestResultViewModel.swift; sourceTree = "<group>"; };
 		C00290322806675C002CA0A7 /* SwiftUIView-imagescrollview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftUIView-imagescrollview.swift"; sourceTree = "<group>"; };
 		C002903428066773002CA0A7 /* TestPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPageView.swift; sourceTree = "<group>"; };
 		C05AA88D2806972800AE67F1 /* kakao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kakao.png; sourceTree = "<group>"; };
+		C05AA88F28069ADD00AE67F1 /* TestResultReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestResultReview.swift; sourceTree = "<group>"; };
+		C05AA89028069ADD00AE67F1 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		C0EE3BBF28051CD50077F6B4 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		C0EE3BC028051CD50077F6B4 /* TestResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestResultView.swift; sourceTree = "<group>"; };
 		C0EE3BC128051CD50077F6B4 /* ResultBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultBarView.swift; sourceTree = "<group>"; };
@@ -377,8 +377,8 @@
 		0AE5B588280482CA00BD062E /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				C002902628065F03002CA0A7 /* ProfileView.swift */,
-				C002902C28065F86002CA0A7 /* TestResultReview.swift */,
+				C05AA89028069ADD00AE67F1 /* ProfileView.swift */,
+				C05AA88F28069ADD00AE67F1 /* TestResultReview.swift */,
 				C002902D28065F86002CA0A7 /* UserDelete.swift */,
 			);
 			path = Settings;
@@ -606,17 +606,17 @@
 				0AE5B56428047F5000BD062E /* FirebaseDB.swift in Sources */,
 				0AE5B55C28047F1900BD062E /* AppSymbol.swift in Sources */,
 				0AE5B56328047F5000BD062E /* UserInfo.swift in Sources */,
-				C002902728065F03002CA0A7 /* ProfileView.swift in Sources */,
 				0AE5B55F28047F1900BD062E /* AppleLogIn.swift in Sources */,
 				C002903128065F9D002CA0A7 /* TestResultViewModel.swift in Sources */,
 				0AE5B57B2804802E00BD062E /* TestSet.swift in Sources */,
-				C002902E28065F86002CA0A7 /* TestResultReview.swift in Sources */,
 				C00290332806675C002CA0A7 /* SwiftUIView-imagescrollview.swift in Sources */,
+				C05AA89128069ADD00AE67F1 /* TestResultReview.swift in Sources */,
 				C0EE3BDF2805267D0077F6B4 /* ToolbarImage.swift in Sources */,
 				C0EE3BEF280548F80077F6B4 /* TestResultModel.swift in Sources */,
 				C0EE3BC728051CD50077F6B4 /* ResultBarView.swift in Sources */,
 				C002902928065F60002CA0A7 /* Home-main.swift in Sources */,
 				C002902F28065F86002CA0A7 /* UserDelete.swift in Sources */,
+				C05AA89228069ADD00AE67F1 /* ProfileView.swift in Sources */,
 				C0EE3BC928051CD50077F6B4 /* ResultTopView.swift in Sources */,
 				0AE5B4EE280475B800BD062E /* PungDeongApp.swift in Sources */,
 				0AE5B5852804806D00BD062E /* SwiftUIView-nextbutton.swift in Sources */,

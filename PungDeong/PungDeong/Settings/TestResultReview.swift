@@ -17,6 +17,21 @@ struct TestResultReview: View {
         return viewModel.resultType(userInfo.test?.type ?? 0)
     }
     
+    var suggestionData: resultData {
+        var typeResult = 0
+        var typeMin = 10
+        var index = 0
+        var arr = userInfo.test!.selects.filter { $0 != userInfo.test!.type}
+        for i in arr {
+            index += 1
+            if (i < typeMin) {
+                typeMin = i
+                typeResult = index
+            }
+        }
+        return viewModel.resultType(typeMin)
+    }
+    
     var body: some View {
         GeometryReader { geometry in
             ScrollView {
@@ -39,6 +54,18 @@ struct TestResultReview: View {
                         .font(.body)
                         .padding(.horizontal, 20)
                         .padding(.top, 1)
+                    VStack {
+                        Text("\(suggestionData.name)과도 친해져보세요!")
+                            .font(.title3)
+                            .foregroundColor(Color("CustomBlue"))
+                            .padding(5)
+                        Image("character_\(suggestionData.type)")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: geometry.size.width / 2.4, height: geometry.size.width / 2.4)
+                        }
+                        //.border(.cyan, width: 1)
+                        .padding(.bottom, 10)
                 }
             }
         }
