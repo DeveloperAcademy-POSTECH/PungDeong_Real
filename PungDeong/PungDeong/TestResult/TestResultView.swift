@@ -151,7 +151,7 @@ extension TestResultView: ShareButtonDelegate {
     
     func sharePhotoButtonTapped() {
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
             if let image = body.takeScreenshot(origin: CGPoint(x: 0, y: 50), size: CGSize(width: 600, height: 680)) {
                 viewModel.sharePicture(img: image)
             } else {
