@@ -12,7 +12,7 @@ struct TestDescriptionContent: View {
     
     //Pop to root View 를 위한 navigation View is Active
     @Binding var rootIsActive : Bool
-    
+    @State var slideTextOpacityForAnimation: Double = 0.9
     @State var isFinished: Bool = false
     @State var isAnimationEnd: Bool = false
     
@@ -90,8 +90,16 @@ struct TestDescriptionContent: View {
                 // 슬라이드 안내 문구
                 VStack {
                     Spacer()
-                    Text("왼쪽으로 슬라이드").frame(height: 60).font(.subheadline).opacity(0.7)
-                }
+                    Text("왼쪽으로 슬라이드")
+                        .opacity(slideTextOpacityForAnimation)
+                        .frame(height: 60)
+                        .font(.subheadline)
+                        .animation(Animation.easeInOut(duration:1.5).repeatForever(autoreverses:true), value: slideTextOpacityForAnimation)
+                        .onAppear{
+                            slideTextOpacityForAnimation = 0.3
+                        }
+                    }
+                
             }
         }
         .background(
