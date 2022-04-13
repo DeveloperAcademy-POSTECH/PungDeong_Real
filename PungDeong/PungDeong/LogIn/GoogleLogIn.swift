@@ -26,10 +26,10 @@ struct GoogleLogIn: View {
             isPresented.toggle()
             self.presentationMode.wrappedValue.dismiss()
         }}, label: {
-            HStack(alignment: .center, spacing: 24) {
+            HStack(alignment: .center, spacing: 4) {
                 Image("Google")
                     .resizable()
-                    .frame(width: 16, height: 16)
+                    .frame(width: 14, height: 14)
                 
                 Text("Sign in with Google")
                     .font(.custom("Roboto-Medium", fixedSize: 16))
