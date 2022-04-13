@@ -46,17 +46,16 @@ struct TestResultView: View {
             ZStack {
                 VStack {
                     ScrollView {
-                        
-                        
                         VStack {
 
                             ResultTopView(result: self.data)
-                                .frame(width: geometry.size.width, height: geometry.size.width)
-                                
+                                .frame(width: geometry.size.width, height: geometry.size.width / 1.2)
+                                .padding(.top, 20)
                                 
                             
                             ResultBarView(result: self.userInfo)
-                                .offset(x: -geometry.size.width / 10)
+                                .offset(x: -geometry.size.width / 10, y: -30)
+                            
                             
                             HStack {
                                 Text("#\(data.hastag[0]) #\(data.hastag[1])")
@@ -65,7 +64,6 @@ struct TestResultView: View {
                             
                                 Spacer()
                             }
-                            .padding(.top, 10)
                             
                             
                             Text(viewModel.resultType(userInfo.test?.type ?? 0).description)
@@ -75,9 +73,6 @@ struct TestResultView: View {
                                 .font(.body)
                                 .padding(.horizontal, 20)
                                 .padding(.top, 1)
-                                
-                                
-                            
                         }
                     }
                     
@@ -113,6 +108,7 @@ struct TestResultView: View {
                         
                         Spacer()
                     }
+                    .padding(.top, 10)
                 }
                 
                 ShareMenu(delegate: self)

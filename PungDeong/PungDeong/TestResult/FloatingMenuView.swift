@@ -61,7 +61,7 @@ struct FloatingMenuView: View {
                 } label: {
                     MenuItem(icon: "camera.fill")
                 }
-                .transition(.move(edge: .trailing))
+                .transition(.move(edge: .bottom))
             }
             
             if showMenuItem2 {
@@ -75,7 +75,7 @@ struct FloatingMenuView: View {
                 } label: {
                     MenuItem(icon: "photo.on.rectangle")
                 }
-                .transition(.move(edge: .trailing))
+                .transition(.move(edge: .bottom))
             }
             
             if showMenuItem3 {
@@ -88,7 +88,7 @@ struct FloatingMenuView: View {
                 } label: {
                     MenuItem(icon: "square.and.arrow.up.fill")
                 }
-                .transition(.move(edge: .trailing))
+                .transition(.move(edge: .bottom))
             }
             
             

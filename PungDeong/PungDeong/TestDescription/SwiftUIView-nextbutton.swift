@@ -59,7 +59,7 @@ struct EditButtonView: View {
  
         ZStack{
             RoundedRectangle(cornerRadius: 10)
-                .fill(Color(red: 0.359, green: 0.731, blue: 0.963))
+                .fill(Color("main"))
                 .frame(height: 50)
                 .padding(20)
                 
