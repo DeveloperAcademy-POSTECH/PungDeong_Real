@@ -59,7 +59,14 @@ struct FloatingMenuView: View {
                     self.isShow = false
                     delegate.kakaoButtonTapped()
                 } label: {
-                    MenuItem(icon: "camera.fill")
+                
+                    Image("kakao")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 50, height: 50)
+                        .cornerRadius(25)
+                           
+                    
                 }
                 .transition(.move(edge: .bottom))
             }
