@@ -27,12 +27,12 @@ struct GoogleLogIn: View {
             self.presentationMode.wrappedValue.dismiss()
         }}, label: {
             HStack(alignment: .center, spacing: 24) {
-                Image("google")
+                Image("Google")
                     .resizable()
-                    .frame(width: 18, height: 18)
+                    .frame(width: 16, height: 16)
                 
-                Text("Google 계정으로 로그인")
-                    .font(.custom("Roboto-Medium", fixedSize: 14))
+                Text("Sign in with Google")
+                    .font(.custom("Roboto-Medium", fixedSize: 16))
                     .foregroundColor(Color(red: 0, green: 0, blue: 0, opacity: 0.54))
             }
         })
