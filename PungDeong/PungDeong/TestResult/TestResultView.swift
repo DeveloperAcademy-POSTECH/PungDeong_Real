@@ -84,10 +84,12 @@ struct TestResultView: View {
                             HStack {
                                 Text("#\(data.hastag[0]) #\(data.hastag[1])")
                                     .fontWeight(.bold)
-                                    .padding(.leading, 25)
+                                    .multilineTextAlignment(.leading)
+                                    
                             
                                 Spacer()
                             }
+                            .padding(.leading, 25)
                             
                             
                             Text(viewModel.resultType(userInfo.test?.type ?? 0).description)
@@ -99,18 +101,26 @@ struct TestResultView: View {
                                 .padding(.top, 1)
                                 .padding(.bottom, 10)
                             
-                            VStack {
-                                Text("\(suggestionData.name)과도 친해져보세요!")
+                            VStack(alignment: .center) {
+                                Text("당신의 부족한 부분을 채우고 싶으세요?")
                                     .font(.title3)
+                                    .fontWeight(.bold)
+                                Text("\(suggestionData.name)")
+                                    .font(.body)
                                     .foregroundColor(Color("CustomBlue"))
-                                    .padding(5)
-                                Image("character_\(suggestionData.type)")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: geometry.size.width / 2.4, height: geometry.size.width / 2.4)
+                                    .padding(.vertical, 5)
+                                
+                                HStack {
+                                    Image("character_\(suggestionData.type)")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: geometry.size.width / 2.4, height: geometry.size.width / 2.4)
+                                }
+                                
                             }
                             //.border(.cyan, width: 1)
-                            .padding(.bottom, 10)
+                            .padding(10)
+                            .padding(.horizontal, 20)
                         }
                     }
                     
