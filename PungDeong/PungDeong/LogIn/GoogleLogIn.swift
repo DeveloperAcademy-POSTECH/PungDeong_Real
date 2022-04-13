@@ -14,6 +14,7 @@ struct GoogleLogIn: View {
     @EnvironmentObject var userInfo: UserInfo
     @EnvironmentObject var vm: GoogleUserAuthModel
     @Binding var isPresented: Bool
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
 
     let screenWidth = UIScreen.main.bounds.width
     let screenHeight = UIScreen.main.bounds.height
@@ -23,9 +24,10 @@ struct GoogleLogIn: View {
             userInfo.email = email
             FirebaseDB().setUserInfo(email: email, userInfo: userInfo)
             isPresented.toggle()
+            self.presentationMode.wrappedValue.dismiss()
         }}, label: {
             HStack(alignment: .center, spacing: 24) {
-                Image("Google")
+                Image("google")
                     .resizable()
                     .frame(width: 18, height: 18)
                 

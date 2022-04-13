@@ -13,13 +13,14 @@ struct Home_main: View {
     //Pop to root View 를 위한 navigation View is Active
     @State var isActive: Bool = false
     
-    
+    @EnvironmentObject var userInfo: UserInfo
+    @EnvironmentObject var count: UserDelete
     
     var body: some View {
         GeometryReader { geometry in
             NavigationView {
                 VStack {
-                    Image("동물들")
+                    Image("characters")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: geometry.size.width,
@@ -38,28 +39,30 @@ struct Home_main: View {
                             .navigationBarHidden(true)
                             ,
                             isActive: self.$isActive
-                        ) {
-                            RetestButton()
-                                
-                        }
-                        .isDetailLink(false)
-                        .navigationBarTitle("Home")
-                    
-                    
-                    
-                  
-                    
-                    
-                    
+                    ) {
+                        RetestButton()
+                            
                 }
-                .padding(.horizontal, 20)
-                
-                .toolbar {
+                .isDetailLink(false)
+                .navigationBarTitle("Home")
+            }
+            .padding(.horizontal, 20)
+            
+            .toolbar {
+                if userInfo.test != nil {
                     NavigationLink(
-                        destination: ProfileView(),
-                        label: {
-                            ToolbarImage()
-                        })
+                        destination: ProfileView(userInfo: userInfo, count: count, shouldPopToRootView: $isActive),
+                            label: {
+                                ToolbarImage()
+                            })
+                    } else if userInfo.test == nil && userInfo.email == nil {
+                        NavigationLink(
+                            destination: LogInView(isPresented: $isActive),
+                            label: {
+                                ToolbarImage()
+                            }
+                        )
+                    }
                 }
                 .navigationBarItems(leading: Image("심볼")
                     .resizable()

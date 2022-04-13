@@ -14,6 +14,7 @@ struct PungDeongApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @StateObject var googleUserAuth: GoogleUserAuthModel =  GoogleUserAuthModel()
     var userInfo = UserInfo()
+    var userCount = UserDelete(count: false)
     @State private var isPresented = true
     
 //    init() {
@@ -27,6 +28,7 @@ struct PungDeongApp: App {
             Home_main()
                 .environmentObject(googleUserAuth)
                 .environmentObject(userInfo)
+                .environmentObject(userCount)
                 .fullScreenCover(isPresented: $isPresented) {
                     LogInView(isPresented: $isPresented)
                         .environmentObject(googleUserAuth)

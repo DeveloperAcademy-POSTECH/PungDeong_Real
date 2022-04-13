@@ -14,6 +14,7 @@ struct TestDescriptionContent: View {
     @Binding var rootIsActive : Bool
     
     @State var isFinished: Bool = false
+    @State var isAnimationEnd: Bool = false
     
     @State private var scrollViewContentOffset = CGFloat(0)
     
@@ -29,12 +30,18 @@ struct TestDescriptionContent: View {
                 GeometryReader { proxy in
                     TrackableScrollView(.horizontal, showIndicators: false, contentOffset: $scrollViewContentOffset) {
                         HStack(spacing: 0) {
+                            
                             ForEach(images.indices) { index in
+                                VStack {
                                 images[index]
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: proxy.size.width, height: proxy.size.height)
+                                    
+                                    if(!isShown) {
                                         
+                                    }
+                                }
            
                             }
                         }
@@ -80,7 +87,18 @@ struct TestDescriptionContent: View {
                 }
             } else {
                 // 버튼 없어용
-                
+            }
+            if(!isAnimationEnd){
+                Button(action:{
+                    withAnimation {
+                        self.isAnimationEnd.toggle()
+                    }
+                }, label:{
+                    VStack {
+                        Image(systemName: "arrow.forward.circle").resizable().frame(width: 80, height: 80, alignment: .center).padding()
+                        Text("오른쪽으로 밀어주세요")
+                    }.frame(width: 200, height: 200, alignment: .center).background(Color.gray).foregroundColor(Color.white).cornerRadius(20.0).opacity(0.9)
+                }).transition(.opacity)
             }
         }
         .background(
@@ -92,6 +110,7 @@ struct TestDescriptionContent: View {
             })
         )
     }
+
 }
             
             
@@ -101,3 +120,4 @@ struct TestDescriptionContent_Previews: PreviewProvider {
         TestDescriptionContent(rootIsActive: .constant(true))
     }
 }
+

@@ -134,7 +134,7 @@ extension TestResultView: ShareButtonDelegate {
         print("DEBUG: save photo delegate method")
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
-            if let image = body.takeScreenshot(origin: CGPoint(x: 0, y: 50), size: CGSize(width: 600, height: 600)) {
+            if let image = body.takeScreenshot(origin: CGPoint(x: 0, y: 50), size: CGSize(width: 600, height: 680)) {
                 viewModel.saveImage(image: image)
             } else {
                 print("DEBUG : image Capture Failed")
@@ -147,7 +147,7 @@ extension TestResultView: ShareButtonDelegate {
     func sharePhotoButtonTapped() {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
-            if let image = body.takeScreenshot(origin: CGPoint(x: 0, y: 50), size: CGSize(width: 600, height: 600)) {
+            if let image = body.takeScreenshot(origin: CGPoint(x: 0, y: 50), size: CGSize(width: 600, height: 680)) {
                 viewModel.sharePicture(img: image)
             } else {
                 print("DEBUG : image Capture Failed")

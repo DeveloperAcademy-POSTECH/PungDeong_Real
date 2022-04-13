@@ -92,7 +92,7 @@ struct TestPageView: View {
             Image("test_background")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                
+                .ignoresSafeArea()
                 
                 
                 
@@ -111,7 +111,7 @@ struct TestPageView: View {
                     }
                     
                     Button {
-                        if(pageIndex != test.pages.count - 1) {
+                        if(pageIndex != test.pages.count - 1 && Answer.answeredType[pageIndex] != 0) {
                             self.pageIndex = pageIndex + 1
                             self.currentItem = test.pages[pageIndex]
                         }
@@ -221,7 +221,7 @@ struct NavButtonView: View {
     
     var body: some View {
         
-        let inVisible = ((text == "arrow.left") && (pageIndex == 0))||((text == "arrow.right") && (pageIndex == test.pages.count - 1))
+        let inVisible = ((text == "arrow.left") && (pageIndex == 0))||((text == "arrow.right") && ((pageIndex == test.pages.count - 1)||(Answer.answeredType[pageIndex] == 0)))
         Image(systemName: text)
             .frame(width: 44, height: 44)
             .font(.subheadline)
@@ -231,7 +231,6 @@ struct NavButtonView: View {
                 RoundedRectangle(cornerRadius: 20)
                     .stroke(Color.gray.opacity(0.4), lineWidth: 1)
             ).opacity(inVisible ? 0 : 1 )
-            .disabled(inVisible)
 
     }
 }
