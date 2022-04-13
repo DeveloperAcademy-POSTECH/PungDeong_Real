@@ -19,9 +19,9 @@ struct ResultData: Identifiable {
         case 1:
             return "정보 재확인"
         case 2:
-            return "근거 조사"
-        case 3:
             return "전문가 자문"
+        case 3:
+            return "근거 조사"
         case 4:
             return "논리 점검"
         case 5:
