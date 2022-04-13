@@ -42,6 +42,6 @@ struct Choice {
 
 struct Answer {
     static var answeredType: [Int] = {
-        return [Int](repeating: 0, count: 20)
+        return [Int](repeating: 0, count: 15)
     }()
 }

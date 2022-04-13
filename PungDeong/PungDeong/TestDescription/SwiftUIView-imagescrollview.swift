@@ -77,7 +77,8 @@ struct TestDescriptionContent: View {
                     Button {
                         // 실행될 코드
                         self.isFinished = true
-                        
+                        Answer.answeredType = [Int](repeating: 0, count: 15)
+                        print("Answer init \(Answer.answeredType)")
                         
                     } label: {
                         EditButtonView(text: "테스트 시작하기")
