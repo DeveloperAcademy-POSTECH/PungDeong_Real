@@ -12,9 +12,9 @@ struct AppSymbol: View {
     let screenHeight = UIScreen.main.bounds.height
     
     var body: some View {
-        Image("풍덩 심볼")
+        Image("logo")
             .resizable()
-            .frame(width: screenWidth * 0.4, height:  screenWidth * 0.4, alignment: .center)
+            .frame(width: screenWidth * 0.6, height:  screenWidth * 0.6, alignment: .center)
             .aspectRatio(contentMode: .fit)
     }
 }
