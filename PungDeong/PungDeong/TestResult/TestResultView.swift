@@ -29,8 +29,30 @@ struct TestResultView: View {
         return viewModel.resultType(userInfo.test?.type ?? 0)
     }
     
-    
-    
+    var suggestionData: resultData {
+        var typeResult = 0
+        var typeMin = 10
+        var index = 0
+        print(userInfo.test!.selects)
+        print(userInfo.test!.type)
+        // var arr = userInfo.test!.selects.filter { $0 != userInfo.test!.type}
+        var arr: [Int] = userInfo.test!.selects.map {
+        if $0 == userInfo.test!.type {
+            return 10
+            } else {
+                return $0
+                }
+            }
+            print(arr)
+            for i in arr {
+            if (i < typeMin) {
+                typeMin = i
+                typeResult = arr.index(of: typeMin)!+1
+            }
+        }
+        print(typeMin)
+        return viewModel.resultType(typeResult)
+    }
    
     
     @Binding var shouldPopToRootView: Bool
@@ -75,6 +97,20 @@ struct TestResultView: View {
                                 .font(.body)
                                 .padding(.horizontal, 20)
                                 .padding(.top, 1)
+                                .padding(.bottom, 10)
+                            
+                            VStack {
+                                Text("\(suggestionData.name)과도 친해져보세요!")
+                                    .font(.title3)
+                                    .foregroundColor(Color("CustomBlue"))
+                                    .padding(5)
+                                Image("character_\(suggestionData.type)")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: geometry.size.width / 2.4, height: geometry.size.width / 2.4)
+                            }
+                            //.border(.cyan, width: 1)
+                            .padding(.bottom, 10)
                         }
                     }
                     

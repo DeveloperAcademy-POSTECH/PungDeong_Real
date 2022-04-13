@@ -21,15 +21,25 @@ struct TestResultReview: View {
         var typeResult = 0
         var typeMin = 10
         var index = 0
-        var arr = userInfo.test!.selects.filter { $0 != userInfo.test!.type}
-        for i in arr {
-            index += 1
+        print(userInfo.test!.selects)
+        print(userInfo.test!.type)
+        // var arr = userInfo.test!.selects.filter { $0 != userInfo.test!.type}
+        var arr: [Int] = userInfo.test!.selects.map {
+        if $0 == userInfo.test!.type {
+            return 10
+            } else {
+                return $0
+                }
+            }
+            print(arr)
+            for i in arr {
             if (i < typeMin) {
                 typeMin = i
-                typeResult = index
+                typeResult = arr.index(of: typeMin)!+1
             }
         }
-        return viewModel.resultType(typeMin)
+        print(typeMin)
+        return viewModel.resultType(typeResult)
     }
     
     var body: some View {
