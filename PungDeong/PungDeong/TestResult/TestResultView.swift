@@ -29,7 +29,7 @@ struct TestResultView: View {
         return viewModel.resultType(userInfo.test?.type ?? 0)
     }
     
-    var suggestionData: resultData {
+    var suggestionData: reviewData {
         var typeResult = 0
         var typeMin = 10
         var index = 0
@@ -51,7 +51,7 @@ struct TestResultView: View {
             }
         }
         print(typeMin)
-        return viewModel.resultType(typeResult)
+        return viewModel.resultReviewType(typeResult)
     }
    
     
@@ -235,3 +235,4 @@ struct TestResultView_Previews: PreviewProvider {
 
     }
 }
+

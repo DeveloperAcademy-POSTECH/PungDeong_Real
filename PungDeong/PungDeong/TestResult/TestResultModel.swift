@@ -17,3 +17,8 @@ struct resultData {
     var description: String
     var image: String
 }
+
+struct reviewData {
+    var type: String
+    var name: String
+}

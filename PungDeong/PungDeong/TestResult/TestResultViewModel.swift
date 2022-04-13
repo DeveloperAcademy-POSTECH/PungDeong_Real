@@ -42,6 +42,25 @@ class TestResultViewModel: NSObject {
         return result
     }
     
+    func resultReviewType(_ type: Int) -> reviewData {
+        var resultReview: reviewData
+        switch type {
+        case 1:
+            resultReview = reviewData(type: "1", name: "정확한 사실관계 확인을 도와줄 수 있는 변호사 우파루파와도 친해져보세요!")
+        case 2:
+            resultReview = reviewData(type: "2", name: "박학다식한 전문지식을 제공해줄 수 있는 척척석사 해달과도 친해져보세요!")
+        case 3:
+            resultReview = reviewData(type: "3", name: "정보를 꼼꼼하게 다시 확인해주는 카페 알바생 금붕어와도 친해져보세요!")
+        case 4:
+            resultReview = reviewData(type: "4", name: "탄탄한 근거 제시로 주장의 설득력을 높여주는 우등생 돌고래와도 친해져보세요!")
+        case 5:
+            resultReview = reviewData(type: "5", name: "신중하고 중립적인 태도로 갈등을 해결해주는 마을이장 거북이와도 친해져보세요!")
+        default:
+            resultReview = reviewData(type: "", name: "")
+        }
+        return resultReview
+    }
+    
     //카카오로 결과 공유
     func shareKakao() {
         

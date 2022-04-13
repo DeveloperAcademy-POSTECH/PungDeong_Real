@@ -17,7 +17,7 @@ struct TestResultReview: View {
         return viewModel.resultType(userInfo.test?.type ?? 0)
     }
     
-    var suggestionData: resultData {
+    var suggestionData: reviewData {
         var typeResult = 0
         var typeMin = 10
         var index = 0
@@ -39,15 +39,33 @@ struct TestResultReview: View {
             }
         }
         print(typeMin)
-        return viewModel.resultType(typeResult)
+        return viewModel.resultReviewType(typeResult)
     }
     
     var body: some View {
         GeometryReader { geometry in
             ScrollView {
                 VStack {
-                    ResultTopView(result: self.data)
-                        .frame(width: geometry.size.width, height: geometry.size.width)
+                    VStack {
+                        Text("당신의 결과는...")
+                            .font(.title2)
+                            .fontWeight(.bold)
+                        
+                        Text(data.name)
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color("character_\(data.type)"))
+                            .padding(.top, 10)
+                            .padding(.horizontal, 20)
+                            .padding(.bottom, 20 )
+                            
+                        Image("character_\(data.type)")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: geometry.size.width / 2.4, height: geometry.size.width / 2.4)
+                        
+                    }
                     ResultBarView(result: self.userInfo)
                         .offset(x: -geometry.size.width / 10)
                     HStack {
