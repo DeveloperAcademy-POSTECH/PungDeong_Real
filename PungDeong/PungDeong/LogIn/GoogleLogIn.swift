@@ -27,7 +27,7 @@ struct GoogleLogIn: View {
             self.presentationMode.wrappedValue.dismiss()
         }}, label: {
             HStack(alignment: .center, spacing: 4) {
-                Image("Google")
+                Image("google")
                     .resizable()
                     .frame(width: 14, height: 14)
                 
