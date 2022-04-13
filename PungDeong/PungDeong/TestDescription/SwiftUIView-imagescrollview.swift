@@ -91,6 +91,7 @@ struct TestDescriptionContent: View {
                 VStack {
                     Spacer()
                     Text("왼쪽으로 슬라이드")
+                        .offset(x: 0, y: -10)
                         .opacity(slideTextOpacityForAnimation)
                         .frame(height: 60)
                         .font(.subheadline)
