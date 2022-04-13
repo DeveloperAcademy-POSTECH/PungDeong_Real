@@ -121,11 +121,7 @@ struct TestPageView: View {
                     }
                     Spacer()
                     
-                    Button {
-                        
-                    } label: {
-                        PageIndexButtonView(pageIndex: pageIndex)
-                    }
+                    PageIndexButtonView(pageIndex: pageIndex)
                    
                 }
                     .padding(.bottom, 6)
