@@ -79,7 +79,7 @@ struct ProfileView: View {
     //                    }
     //                }
     //                .padding([.bottom], geometry.size.height*0.03)
-                    VStack {
+                    VStack(spacing: 10) {
                         Button(action: {
                         }) {
                             NavigationLink(destination: TestResultReview(userInfo: userInfo)) {
@@ -87,17 +87,8 @@ struct ProfileView: View {
                             }
                         }
                         .buttonStyle(SettingButtonStyle())
-//                        Button(action: {
-//                        }) {
-////                            NavigationLink(destination: Home_main()) {
-////                                Text("로그아웃")
-////                            }
-//                            NavigationLink(destination: Home_main()
-//                                .navigationBarHidden(true)
-//                            ) {
-//                                Text("로그아웃")
-//                            }
-//                        }
+
+                        
                         Button(action: {
                             userInfo.email = nil
                             userInfo.test = nil
@@ -132,40 +123,7 @@ struct ProfileView: View {
                         .buttonStyle(SettingButtonStyle())
                         
                         
-//                        .toolbar {
-//                            if count.count == false {
-//                                NavigationLink(destination: Home_main()
-//                                    .navigationBarHidden(true)
-//                                    .onAppear(perform: {
-//                                        db.collection("Email").document("\(userInfo.email ?? "")").delete() { err in
-//                                            if let err = err {
-//                                                print("Error removing document: \(err)")
-//                                            } else {
-//                                                print("Document successfully removed!")
-//                                            }
-//                                        }
-//                                        db.collection("Test1").document("\(userInfo.email ?? "")").delete() {
-//                                            err in
-//                                            if let err = err {
-//                                                print("Error removing document: \(err)")
-//                                            } else {
-//                                                print("Document successfully removed!")
-//                                            }
-//                                        }
-//                                        userInfo.email = nil
-//                                        userInfo.test = nil
-//                                        count.count = true
-//                                        //self.presentationMode.wrappedValue.dismiss()
-//                                    })
-//                                ) {
-//                                    Image(systemName: "person.fill.xmark")
-//                                }
-//                            }
-//                        }
-//                        .navigationBarItems(leading: Image("심볼")
-//                            .resizable()
-//                            .aspectRatio(contentMode: .fit)
-//                            .frame(width: 45, alignment: .topLeading))
+
                     }
                 }
             }
@@ -173,38 +131,6 @@ struct ProfileView: View {
     }
 }
 
-//Button(action: {
-//}) {
-////                            NavigationLink(destination: Home_main()) {
-////                                Text("로그아웃")
-////                            }
-//    NavigationLink(destination: Home_main()
-//        .navigationBarHidden(true)
-//        .onAppear(perform: {
-//            db.collection("Email").document("\(userInfo.email ?? "")").delete() { err in
-//                if let err = err {
-//                    print("Error removing document: \(err)")
-//                } else {
-//                    print("Document successfully removed!")
-//                }
-//            }
-//            db.collection("Test1").document("\(userInfo.email ?? "")").delete() {
-//                err in
-//                if let err = err {
-//                    print("Error removing document: \(err)")
-//                } else {
-//                    print("Document successfully removed!")
-//                }
-//            }
-//            userInfo.email = nil
-//            userInfo.test = nil
-//            //self.presentationMode.wrappedValue.dismiss()
-//        })
-//    ) {
-//        Text("회원탈퇴")
-//    }
-//}
-//.buttonStyle(SettingButtonStyle())
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
@@ -218,10 +144,10 @@ struct SettingButtonStyle: ButtonStyle {
             
             .frame(maxWidth: .infinity)
             .frame(height: 45)
-            .font(.system(size: 18, weight: .bold))
+            .font(.system(size: 16, weight: .semibold))
             .foregroundColor(Color.white)
             .background(Color("LightBlue"))
             .cornerRadius(6)
-            .padding(.horizontal, 20)
+            .padding(.horizontal, 30)
     }
 }
