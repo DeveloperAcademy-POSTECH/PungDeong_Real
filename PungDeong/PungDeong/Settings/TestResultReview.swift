@@ -83,7 +83,7 @@ struct TestResultReview: View {
                         .padding(.horizontal, 20)
                         .padding(.top, 1)
                     VStack {
-                        Text("\(suggestionData.name)과도 친해져보세요!")
+                        Text("\(suggestionData.name)")
                             .font(.title3)
                             .foregroundColor(Color("CustomBlue"))
                             .padding(5)
