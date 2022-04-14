@@ -86,6 +86,7 @@
 		C0EE3BF8280564050077F6B4 /* character_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C0EE3BF3280564050077F6B4 /* character_4.png */; };
 		C0EE3BF9280564050077F6B4 /* character_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C0EE3BF4280564050077F6B4 /* character_3.png */; };
 		C0EE3BFA280564050077F6B4 /* character_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C0EE3BF5280564050077F6B4 /* character_2.png */; };
+		E245396F2807F51A00DD3A97 /* TestLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E245396E2807F51A00DD3A97 /* TestLogin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +176,7 @@
 		C0EE3BF3280564050077F6B4 /* character_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character_4.png; sourceTree = "<group>"; };
 		C0EE3BF4280564050077F6B4 /* character_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character_3.png; sourceTree = "<group>"; };
 		C0EE3BF5280564050077F6B4 /* character_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character_2.png; sourceTree = "<group>"; };
+		E245396E2807F51A00DD3A97 /* TestLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLogin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +327,7 @@
 				C002902A28065F71002CA0A7 /* GoogleLogIn.swift */,
 				0AE5B55828047F1900BD062E /* LogInView.swift */,
 				0AE5B55428047F0B00BD062E /* Font */,
+				E245396E2807F51A00DD3A97 /* TestLogin.swift */,
 			);
 			path = LogIn;
 			sourceTree = "<group>";
@@ -597,6 +600,7 @@
 				C0EE3BCA28051CD50077F6B4 /* FloatingMenuView.swift in Sources */,
 				C0EE3BC628051CD50077F6B4 /* TestResultView.swift in Sources */,
 				C002902B28065F71002CA0A7 /* GoogleLogIn.swift in Sources */,
+				E245396F2807F51A00DD3A97 /* TestLogin.swift in Sources */,
 				0AE5B55D28047F1900BD062E /* LogInView.swift in Sources */,
 				0AE5B4F0280475B800BD062E /* ContentView.swift in Sources */,
 				0AE5B57E2804802E00BD062E /* TestModel.swift in Sources */,
@@ -782,7 +786,7 @@
 				CODE_SIGN_ENTITLEMENTS = PungDeong/PungDeong.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"PungDeong/Preview Content\"";
 				DEVELOPMENT_TEAM = SXSNK823Y9;
 				ENABLE_PREVIEWS = YES;
@@ -814,9 +818,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = PungDeong/PungDeong.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"PungDeong/Preview Content\"";
 				DEVELOPMENT_TEAM = SXSNK823Y9;
 				ENABLE_PREVIEWS = YES;
@@ -835,7 +839,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.team7.gbsc.pungdeong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "GBSCHOCK-pungdeong";
+				PROVISIONING_PROFILE_SPECIFIER = "GBSCHOCK-pungdeong-AppStore";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
