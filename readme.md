@@ -24,6 +24,9 @@ Let us check which information utilization type we have, along with cute animal 
 ## :framed_picture: Demo
 
 Insert gif or link to demo
+<img src="https://user-images.githubusercontent.com/40786679/163774468-ba12044e-395b-40f2-aa2e-7a233febcd59.gif" width="250" height="500"/>
+<img src="https://user-images.githubusercontent.com/40786679/163774494-a99cec70-e2bb-4ea1-848d-f017733336ba.gif" width="250" height="500"/>
+<img src="https://user-images.githubusercontent.com/40786679/163774501-f9d9301e-9fa5-438f-b62e-d47c563289e8.gif" width="250" height="500"/>
 
 
 ## :fireworks: Screenshots
