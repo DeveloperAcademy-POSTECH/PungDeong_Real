@@ -4,7 +4,7 @@
 
 # :iphone: 풍덩: pungdeong
 
-귀여운 동물친구들과 함께 나의 정보 활용 유형을 재밌게 알아봐요!
+귀여운 동물친구들과 함께 나의 정보 활용 유형을 재밌게 알아봐요!  
 Let us check which information utilization type we have, along with cute animal friends!
 
 
