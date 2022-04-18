@@ -46,5 +46,5 @@ Insert gif or link to demo
 
 ## :lock_with_ink_pen: License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[GBSC](https://github.com/GBSCHOCK)
 
