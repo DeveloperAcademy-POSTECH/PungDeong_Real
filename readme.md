@@ -32,7 +32,7 @@ Insert gif or link to demo
 
 
 ## :sparkles: Skills & Tech Stack
-swiftUI ...
+SwiftUI, notification center, image rendering from view component, Firebase, Kakao link API
 
 ## :books: Documentation
 
