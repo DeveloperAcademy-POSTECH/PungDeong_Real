@@ -17,7 +17,7 @@
 
 ## :people_hugging: Authors
 
-- [@Wooyeong Jung](https://github.com/woo0dev) | [@YourName](https://www.github.com/) | [@YourName](https://www.github.com/) | [@YourName](https://www.github.com/) | [@YourName](https://www.github.com/) | [@YourName](https://www.github.com/)
+- [@Wooyeong Jung](https://github.com/woo0dev) | [@Seulki Lee](https://github.com/eeunho) | [@YourName](https://www.github.com/) | [@YourName](https://www.github.com/) | [@YourName](https://www.github.com/) | [@YourName](https://www.github.com/)
 
 
 ## :framed_picture: Demo
