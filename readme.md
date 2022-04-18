@@ -2,9 +2,9 @@
 ![Logo](https://dummyimage.com/1000x300/000/fff.png)
 
 
-# :iphone: Project Title
+# :iphone: 풍덩: Pungdeong
 
-A brief description of what this project does and who it's for
+귀여운 동물친구들과 함께 나의 정보 활용 유형을 재밌게 알아봐요! / Let us check which information utilization type we have, along with cute animal friends!
 
 
 ## :pushpin: Features
@@ -17,7 +17,7 @@ A brief description of what this project does and who it's for
 
 ## :people_hugging: Authors
 
-- [@YourName](https://www.github.com/) | [@YourName](https://www.github.com/) | [@YourName](https://www.github.com/) | [@YourName](https://www.github.com/) | [@YourName](https://www.github.com/) | [@YourName](https://www.github.com/)
+- [@Wooyeong Jung](https://github.com/woo0dev) | [@YourName](https://www.github.com/) | [@YourName](https://www.github.com/) | [@YourName](https://www.github.com/) | [@YourName](https://www.github.com/) | [@YourName](https://www.github.com/)
 
 
 ## :framed_picture: Demo
