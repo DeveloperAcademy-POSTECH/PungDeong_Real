@@ -9,10 +9,10 @@
 
 ## :pushpin: Features
 
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
+- OAuth LogIn
+- Firebase DB
+- Share
+- Notification Center
 
 
 ## :people_hugging: Authors
