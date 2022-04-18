@@ -1,5 +1,5 @@
 
-![Logo](https://dummyimage.com/1000x300/000/fff.png)
+![1000x300](https://user-images.githubusercontent.com/57060443/163772095-e8c5fac8-4de6-469f-b910-6117f11e6b67.png)
 
 
 # :iphone: 풍덩: pungdeong
@@ -32,7 +32,11 @@ Insert gif or link to demo
 
 
 ## :sparkles: Skills & Tech Stack
-SwiftUI, notification center, image rendering from view component, Firebase, Kakao link API
+- SwiftUI
+- notification center
+- image rendering from view component
+- Firebase
+- Kakao link API
 
 ## :books: Documentation
 
