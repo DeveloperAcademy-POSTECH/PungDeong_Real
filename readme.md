@@ -18,7 +18,7 @@ Let us check which information utilization type we have, along with cute animal 
 
 ## :people_hugging: Authors
 
-- [@Wooyeong Jung](https://github.com/woo0dev) | [@Seulki Lee](https://github.com/eeunho) | [@Sanghyun Kim](https://github.com/iDrogba) | [@Hojeong Jeon](https://github.com/lau0505) | [@Dongjin Jeon](https://github.com/huhuthuhut) |  [@Taehyun_Kong](https://github.com/Apple-Kong)
+- [@Wooyeong Jung](https://github.com/woo0dev) | [@Seulki Lee](https://github.com/sseulkii) | [@Sanghyun Kim](https://github.com/iDrogba) | [@Hojeong Jeon](https://github.com/lau0505) | [@Dongjin Jeon](https://github.com/huhuthuhut) |  [@Taehyun_Kong](https://github.com/Apple-Kong)
 
 
 ## :framed_picture: Demo
